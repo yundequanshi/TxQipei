@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/common_white"
+    >
+ <!-- 标题 -->
+<RelativeLayout
+    android:id="@+id/top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@color/common_blue"
+    >
+    <ImageView
+        android:id="@+id/home_top_back"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/common_back"
+        android:scaleType="centerInside"
+        android:paddingRight="20dp"
+        />
+    <TextView
+        android:id="@+id/top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="实用工具"
+        android:layout_centerInParent="true"
+        android:textColor="@color/common_white"
+        android:textSize="23sp"
+        />
+</RelativeLayout>
+ <WebView
+    android:id="@+id/violationweb"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/top_bar"
+    />
+ 
+ <ImageView
+     android:id="@+id/iv_back"
+     android:layout_width="50dp"
+     android:layout_height="50dp"
+     android:src="@drawable/my_tool_back"
+     android:scaleType="fitCenter"
+     android:layout_alignParentBottom="true"
+     android:layout_marginLeft="15dp"
+     android:layout_marginBottom="20dp"
+     />
+ <ImageView
+     android:id="@+id/iv_go"
+     android:layout_width="50dp"
+     android:layout_height="50dp"
+     android:src="@drawable/my_tool_go"
+     android:scaleType="fitCenter"
+     android:layout_alignParentRight="true"
+     android:layout_alignParentBottom="true"
+     android:layout_marginRight="15dp"
+     android:layout_marginBottom="20dp"
+     />
+</RelativeLayout>

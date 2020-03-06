@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/common_white">
+     <!-- 标题 -->
+<RelativeLayout
+    android:id="@+id/top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@color/common_blue"
+    >
+     <TextView
+        android:id="@+id/top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的二手件"
+        android:layout_centerInParent="true"
+        android:textColor="@color/common_white"
+        android:textSize="23sp"
+        /> 
+    <ImageButton
+        android:id="@+id/accident_ib_add"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:src="@drawable/message_add"
+        android:scaleType="centerInside"
+        android:layout_marginRight="8dp"
+        />
+</RelativeLayout>
+ <RelativeLayout
+       android:id="@+id/accident_ly_search"
+       android:layout_width="match_parent"
+       android:layout_height="55dp"
+       android:visibility="gone"
+       android:background="@color/login_gray"
+       android:layout_below="@+id/top_bar"
+       >
+      <EditText
+          android:id="@+id/accident_et_search"
+          style="@style/home_et_search"
+          android:layout_margin="8dp"
+          android:hint="请输入..."
+          android:background="@drawable/home_et_search"
+          android:layout_centerInParent="true"
+          />
+   	   
+	 <ImageView
+        android:id="@+id/accident_iv_search"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/home_top_search"
+        android:scaleType="centerInside"
+        android:paddingRight="10dp"
+        />
+</RelativeLayout>
+<com.ab.view.pullview.AbPullToRefreshView
+    android:id="@+id/accident_lv_car"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_white"
+    android:layout_below="@id/accident_ly_search"
+    android:orientation="vertical" >
+    
+       <ListView
+        android:id="@+id/mListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+		style="@style/common_list"  
+        />
+</com.ab.view.pullview.AbPullToRefreshView>
+<!-- <com.zuomei.widget.pulltorefresh.PullToRefreshListView
+        android:id="@+id/accident_lv_car"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:background="@color/common_white"
+		android:layout_below="@id/accident_ly_search"
+		android:layout_marginTop="5dp"
+		android:divider="@drawable/common_divider"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" 
+        /> -->
+</LinearLayout>

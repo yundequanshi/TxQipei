@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/tab2_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        >
+
+        <ImageButton
+            android:id="@+id/top_btn_left"
+            style="@style/topbar_btn_left"
+            android:src="@drawable/qp_cm_btn_back" />
+
+        <RadioGroup
+            android:id="@+id/detail_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_toRightOf="@id/top_btn_left"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/detail_rb_tab1"
+                android:layout_width="50dp"
+                android:layout_height="49dp"
+                android:background="@drawable/tab2_tv_nav"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="详情"
+                android:layout_marginLeft="15dp"
+                android:textColor="@drawable/interact_tv_color"
+                />
+            <!--            android:textColor="@drawable/interact_tv_color"-->
+
+            <RadioButton
+                android:id="@+id/detail_rb_tab2"
+                android:layout_width="50dp"
+                android:layout_height="49dp"
+                android:background="@drawable/tab2_tv_nav"
+                android:button="@null"
+                android:gravity="center"
+                android:text="图片"
+                android:layout_marginLeft="15dp"
+                android:textColor="@drawable/interact_tv_color"
+                />
+
+            <RadioButton
+                android:id="@+id/detail_rb_tab3"
+                android:layout_width="50dp"
+                android:layout_height="49dp"
+                android:background="@drawable/tab2_tv_nav"
+                android:button="@null"
+                android:gravity="center"
+                android:text="报价"
+                android:layout_marginLeft="15dp"
+                android:textColor="@drawable/interact_tv_color"
+                />
+            <RadioButton
+                android:id="@+id/detail_rb_tab4"
+                android:layout_width="50dp"
+                android:layout_height="49dp"
+                android:background="@drawable/tab2_tv_nav"
+                android:button="@null"
+                android:gravity="center"
+                android:text="VCR"
+                android:layout_marginLeft="15dp"
+                android:textColor="@drawable/interact_tv_color"
+                />
+        </RadioGroup>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cm_divider"
+            android:layout_below="@id/interact_rg"
+            />
+
+
+        <ImageView
+            android:id="@+id/tab2_iv_collect"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/accident_btn_collect"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitCenter"
+            android:clickable="true"
+            android:padding="13dp"
+            />
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/detail_fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab2_rl_top"
+        />
+</LinearLayout>

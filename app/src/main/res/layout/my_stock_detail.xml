@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ml="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/stock_rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- 标题 -->
+
+        <RelativeLayout
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/common_blue" >
+
+            <ImageView
+                android:id="@+id/home_top_back"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/common_back" />
+
+            <TextView
+                android:id="@+id/top_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="填写进货单"
+                android:textColor="@color/common_white"
+                android:textSize="23sp" />
+
+            <Button
+                android:id="@+id/stock_btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/nav_baocun"
+                android:padding="5dp"
+                android:textColor="@color/common_white"
+                android:textSize="19sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#f2f2f2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+
+            <EditText
+                android:id="@+id/add_et_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="left"
+                android:hint="商家名称..." />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#f2f2f2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="商户电话" />
+
+            <EditText
+                android:id="@+id/add_et_phone"
+                style="@style/add_et"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:gravity="left"
+                android:hint="请输入商户电话..."
+                android:inputType="number" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f2f2f2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp" 
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="进货日期" />
+
+            <Button
+                android:id="@+id/add_et_time"
+                style="@style/add_et"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:hint="进货日期..."
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:background="#f2f2f2">
+
+            <Button
+                android:id="@+id/add_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/cm_font_blue1"
+                android:gravity="center"
+                android:text="添加详细信息"
+                android:textColor="@color/common_white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#f2f2f2" />
+
+        <ListView
+            android:id="@+id/add_lv_record"
+            style="@style/common_list"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+</RelativeLayout>

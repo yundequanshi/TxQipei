@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_register_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/common_white"
+    >
+ <!-- 标题 -->
+    <RelativeLayout
+        android:id="@+id/topbar"
+        style="@style/topbar_layout">
+
+        <ImageButton
+            android:id="@+id/home_top_back"
+            style="@style/topbar_btn_left"
+            android:src="@drawable/qp_cm_btn_back" />
+
+        <TextView
+            android:id="@+id/top_title"
+            style="@style/topbar_title"
+            android:layout_centerInParent="true"
+            android:text="优惠详情" />
+    </RelativeLayout>
+
+ 	<WebView
+ 	    android:id="@+id/web"
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="match_parent"
+ 	    android:layout_below="@id/topbar"
+ 	    />
+</RelativeLayout>

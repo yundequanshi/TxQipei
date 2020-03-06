@@ -1,0 +1,366 @@
+/**
+ * FlieName:LTHttpType.java Destribution: http request type and response type Author:michael
+ * 2013-5-17 下午4:01:51
+ */
+package com.zuomei.http;
+
+/**
+ * @author michael
+ */
+public class ZMHttpType {
+
+  public enum RequestType {
+
+    //注册
+    REGISTER,
+    //登录
+    LOGIN,
+    LOGIN_UPDATE,
+    LOGIN_GETCODE,
+    LOGIN_RESET_PWD,
+    //首页-城市
+    HOME_MESSAGE_COUNT,
+    HOME_BUSINESS,
+    HOME_CITY,
+    HOME_CATALOG,
+    TX_HOME_CATALOG,
+    HOME_SEARCH,
+    HOME_SEARCH_ALL,
+    HOME_BUSINESS_LIST,
+    HOME_BUSINESS_DETAIL,
+    HOME_COLLECT,
+    HOME_AD,
+    HOME_IMAGE,
+    HOME_PRODUCT,
+    HOME_MAP,
+    HOME_CALL,
+    HOME_CALL_WEB,
+    HOME_COMMENT,
+
+    //互动
+    MESSAGE_LIST,
+    MESSAGE_REPLY,
+    MESSAGE_PUBLISH,
+    MESSAGE_REPORT,
+    HD_COLLECTION,
+    HD_DIANZAN,
+    HD_JUBAO,
+
+    //增加供应,
+    SUPPLY_ADD,
+    SUPPLY_LIST,
+    SUPPLY_MY,
+    SUPPLY_MY_DEL,
+    //我的
+    MY_STOCK_ADD,
+    MY_STOCK_LIST,
+    MY_STOCK_DEL,
+    MY_REPAIR_LIST,
+    MY_REPAIR_ADD,
+    MY_REPAIR_DEL,
+    MY_INFO_D,
+    MY_INFO_HEAD,
+    MY_INFO_DEPOTNAME,
+    MY_INFO_REALNAME,
+    MY_INFO_ALIPAY,
+    MY_INFO_LOCATION,
+    MY_INFO_ADDRESS,
+    MY_INFO_PHONE,
+    MY_INFO_,
+    MY_INFO_B,
+    MY_SPECIAL_LIST,
+    MY_REBATE_LIST,
+    MY_SPECIAL_DETAIL,
+    MY_CONTACT,
+    MY_COLLECT,
+    MY_PRODUCT_ADD,
+    MY_PRODUCT_LIST,
+    MY_PRODUCT_DEL,
+    MY_USER_COUNT,
+    MY_USER_LIST,
+    MY_UPDATE_PWD,
+    MY_DIAL_LIST,
+    MY_DIAL_LIST2,
+    MY_DIAL_DETAIL,
+    MY_DIAL_DETAIL2,
+    MY_DIAL_COUNT,
+    MY_MESSAGE,
+    MY_MESSAGE_REPLY,
+    MY_MESSAGE_ME,
+    MY_MESSAGE_DEL,
+    MY_DIAL_TODAY,
+    MY_DIAL_ALL,
+    MY_DIAL_DEL,
+    MY_DIAL_DETAIL_DEL,
+    MY_DEAL_LIST,
+    MY_BIND,
+    MY_ACCIDENT_LIST,
+    MY_ACCIDENT_DEL,
+    MY_BANK,
+    MY_BANK_D,
+    MY_BANK_UPDATE,
+    MY_BANK_UPDATE_D,
+    MY_MANIFESTO,
+
+    MY_PACKET_INFO,
+    MY_PACKET_UPDATE,
+
+    MY_PHONE_BUISNESS,
+    MY_INTEGRAL_LIST,
+
+    //商品评论
+    MY_DEAL_COMMENT,
+    MY_DEAL_REFUND,
+    //提现
+    MY_DEAL_RECHARGE,
+    //充值
+    MY_DEAL_WITHDRAW,
+    //提现列表
+    MY_WITHDRAW_LIST,
+    //事故车
+    ACCIDENT_ADD,
+    AACIDENT_LIST,
+    AACIDENT_DETAIL,
+    LEAVE_ADD,
+    LEAVE_DEATAIL,
+    LEAVE_LIST,
+    LEAVE_MY_LIST,
+    LEAVE_DEL,
+    OFFER_ADD,
+
+    ADVAN_ADD,
+    ADVAN_DEATAIL,
+    ADVAN_LIST,
+    ADVAN_MY_LIST,
+    ADVAN_DEL,
+
+    SIGN,
+    SIGN_INFO,
+
+    LOTTERY_MAIN,
+    LOTTERY_RECORD,
+    LOTTERY_DETAIL,
+    LOTTERY_RECORD_LIST,
+
+    BILL2LIST,
+    BILL2_DETAIL,
+
+    DEPOT_PAY_INFO,
+    DEPOT_PART_ADD,
+    DEPOT_PART_MG_LIST,
+    DEPOT_PART_MG_DEL,
+    DEPOT_PART_BUSINESS_LIST,
+    DEPOT_PART_BUSINESS_DETAIL,
+    DEPOT_PART_BUSINESS_USE,
+
+    BUS_PART_LIST,
+    BUS_PART_DETAIL,
+    BUS_PART_OFFER,
+
+    MY_PAY_GETCODE,
+    MY_PAY_SETPWD,
+    MY_PAY_VERIFYPWD,
+    MY_PAY_JUDGEPWD,
+
+
+    TX_INTERGRAL_SHOP,
+    TX_INTERGRAL_SHOP_DETAIL,
+    TX_INTERGRAL_SHOP_BUY,
+    TX_INTERGRAL_SHOP_CONVERT,
+
+    TX_INFO_LIST,
+
+    TX_SHOP_PRODUCT_LIST,
+    TX_SHOP_PRODUCT_SALE,
+    TX_SHOP_PRODUCT_HOT,
+    TX_SHOP_PRODUCT_DETAIL,
+    TX_SHOP_PRODUCT_BUY,
+    TX_SHOP_PRODUCT_SUBMIT,
+    TX_SHOP_PRODUCT_SUBMIT_CAR,
+    TX_SHOP_PRODUCT_PAY_WX,
+    TX_SHOP_PRODUCT_PAY_ALIPAY,
+    TX_SHOP_PRODUCT_PAY_YUE,
+    TX_SHOP_ORDER_LOGISTICAL,
+    TX_SHOP_ORDER_SUM,
+    TX_CHECK_APP_VERSION,
+    TX_PAY_ALIPAY_AFFIRM,
+    TX_PAY_CANCEL,
+    TX_PAY_AFFIRM,
+    TX_PAY_QUIT,
+    TX_PAY_YUE_CHECEK,
+
+    TX_SHOP_CAR_ADD,
+
+    TX_SHOP_ADDRESS_MY,
+    TX_SHOP_ADDRESS_ADD,
+    TX_SHOP_ADDRESS_UPDATE,
+    TX_SHOP_ADDRESS_DEL,
+    TX_SHOP_ADDRESS_SET,
+
+    TX_SHOP_ORDER_DFK,
+    TX_SHOP_ORDER_DSH,
+    TX_SHOP_ORDER_YSH,
+
+
+    //微信支付
+    WEIXIN_GET_TOKEN,
+    WEIXIN_PAY,
+    WEIXIN_PAY_ENCRYPT,
+    WEIXIN_PAY_CONFIRM,
+    WEIXIN_PAY_CONFIRM_SHOP,
+
+    //===========删除=======================================
+
+    // 验证验证码
+    VERIFY_CODE,
+
+    // 绑定微博
+    BIND_WEIBO,
+
+    //获取资源
+    MYRESOURCES,
+
+    /**
+     * 下载文件
+     */
+    DOWNLOADFILE,
+
+    /**
+     * 获取用户详细信息
+     */
+    USERDETAIL,
+
+    /**
+     * 获取用户的相册列表
+     */
+    PHOTOALBUM,
+
+    /**
+     * 获取做没成就
+     */
+    ZMACHIEVEMENTS,
+
+    /**
+     * 添加单身资源
+     */
+    ADDRESOURCE,
+
+    /**
+     * 获取媒人信息
+     */
+    USERMATCHMAKER,
+
+    //我的好友
+    FRIEND_INVITE_CONTACT,
+    FRIEND_GET_NEW,
+    FRIEND_GET_ALL,
+    FRIEND_SEARCH,
+    FRIEND_NEAR,
+    FRIEND_VERIFY,
+    FRIEND_VERIFY_PHONE,
+    FRIEND_ADD,
+    /**
+     * 添加单身资源的个性签名
+     */
+    UPDATEUSERSIGNATURE,
+
+    /**
+     * 添加单身资源头像
+     */
+
+    UPDATEUSERPHOTO,
+
+    /**
+     * 添加单身资源相册
+     */
+    UPDATEPHOTOALBUM,
+    /**
+     * 添加单身资源的基本资源
+     */
+    UPDATEBASICINFO,
+
+    /**
+     * 添单身资源的详细信息
+     */
+    UPDATEDETAILINFO,
+
+    /**
+     * 添加单身资源择偶标准
+     */
+    UPDATECONSORTINFO,
+
+    /**
+     * 添加印象
+     */
+    UPDATELABELS,
+
+    GENERATE_MATCH_REPORT, //生成匹配报告
+
+    /**
+     * 发送匹配报告
+     */
+    SENDMATCHREPORT,
+
+    /**
+     * 获取匹配记录
+     */
+    MATCHRECORDS,
+
+    //举报用户
+    REPORTUSER,
+    //加入黑名单
+    ADDBLACKLIST,
+    //解除好友关系
+    RELIEVEFRIEND,
+    //查看资源的微博
+    GETWEIBOURL,
+    //支付宝
+    ORDER_PAY_PARAM_ALIPAY,
+    ORDER_PAY_ALIPAY_RIGHT,
+
+
+    //分享
+    MY_SHARE,
+    //购物车
+    SHOPCAR,
+    EDITSHOPCAR,
+    DELSHOPCAR,
+    SHOPCARBUY,
+    //订单详情
+    ORDERDETAIL,
+    //商品评价
+    SHOPPRODUCTPJ,
+    //商品列表
+    SHOPPRODUCTLIST,
+    SHOPPINGJIACHAT,
+    //商品发布
+    SHOPPRODUCTFABU,
+
+
+    API_QUERY, TX_SHOP_PLAY_DATA,
+    TX_SHOP_FIND_HOMEGOODS_TYPE,
+    TX_SHOP_FIND_HOMEGOODS_ALL_TYPE,
+    GET_USER_TRENDS,
+    TX_SHOP_PRODUCT_BY_TYPE,
+    GET_SECOND_COMPANYTYPE,
+    GET_SECOND_COMPANYTYPE2,
+    UPDATE_COMPANY_DECLARATION,
+    UPDATE_COMPANY_PHONE,
+    FIND_COLLECT_INTERACTION,
+    FIND_PRODUCT_BY_KEY,
+    UPDATE_CONCURREN_OPERATE,
+    FIND_COMPANY_PRODUCTS,
+    DELETE_COMPANY_PRODUCTS,
+    ADD_COMPANY_PRODUCTS,
+    MY_UPDATE_DEPOT,
+    FIND_PRAISEINFO_BY_INTERACTIONID,
+    GET_USER_COMPANY_TRENDS,
+    CHECK_APPVERSION_UPDATE,
+    pointLikeReocrd
+  }
+
+  public enum ResponseType {
+    XML,
+    JSON
+  }
+}

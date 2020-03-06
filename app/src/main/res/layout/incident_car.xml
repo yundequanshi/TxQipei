@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/login_register_root"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:background="@color/common_white">
+
+   <RelativeLayout
+      android:id="@+id/topbar"
+      style="@style/topbar_layout"
+      android:background="@color/head_back_nomall">
+
+      <ImageButton
+         android:id="@+id/top_btn_left"
+         style="@style/topbar_btn_left"
+         android:src="@drawable/common_back" />
+
+      <TextView
+         android:id="@+id/top_tv_title"
+         style="@style/topbar_title"
+         android:layout_centerInParent="true"
+         android:text="类别"
+         android:textColor="@color/white" />
+   </RelativeLayout>
+
+   <RelativeLayout
+      android:id="@+id/home_ly_business"
+      android:layout_width="match_parent"
+      android:layout_height="55dp"
+      android:layout_below="@id/topbar"
+      android:background="@color/login_gray">
+
+      <EditText
+         android:id="@+id/home_et_search"
+         style="@style/home_et_search"
+         android:layout_margin="8dp"
+         android:layout_centerInParent="true"
+         android:background="@drawable/home_et_search"
+         android:hint="亲，请搜索商家名称或类别名称" />
+
+      <ImageView
+         android:id="@+id/btn_search"
+         android:layout_width="60dp"
+         android:layout_height="60dp"
+         android:layout_marginLeft="10dp"
+         android:layout_alignParentRight="true"
+         android:paddingRight="10dp"
+         android:scaleType="centerInside"
+         android:src="@drawable/home_top_search" />
+   </RelativeLayout>
+
+   <android.support.v4.widget.DrawerLayout
+      android:id="@+id/drawer_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/home_ly_business">
+
+      <FrameLayout
+         android:id="@+id/content_frame"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:clickable="true">
+
+         <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <ListView
+               android:id="@+id/home_lv_car"
+               style="@style/common_list"
+               android:background="@color/common_white"
+               android:clickable="true" />
+
+            <com.zuomei.widget.sortlistview.SideBar
+               android:id="@+id/home_sidrbar"
+               android:layout_width="20dp"
+               android:layout_height="match_parent"
+               android:layout_alignParentRight="true" />
+
+            <TextView
+               android:id="@+id/home_tv_dialog"
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:layout_centerInParent="true"
+               android:gravity="center"
+               android:textColor="@color/common_black"
+               android:textSize="30sp"
+               android:visibility="invisible" />
+         </RelativeLayout>
+      </FrameLayout>
+
+      <RelativeLayout
+         android:id="@+id/right_drawer_layout"
+         android:layout_width="240dp"
+         android:layout_height="match_parent"
+         android:layout_gravity="right"
+         android:paddingLeft="16dp"
+         android:background="@android:color/white"
+         android:clickable="true">
+
+         <com.baichang.android.widget.BCHorizontalLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+               android:id="@+id/lv_select_car"
+               style="@style/cm_list_view">
+
+            </ListView>
+         </com.baichang.android.widget.BCHorizontalLinearLayout>
+
+      </RelativeLayout>
+
+   </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

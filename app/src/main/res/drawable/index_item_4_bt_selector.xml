@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item android:drawable="@drawable/dianmowujin_pre" android:state_pressed="true"/>
+    <item android:drawable="@drawable/dianmowujin" android:state_selected="true"/>
+    <!-- 默认时的图片 -->
+    <item android:drawable="@drawable/dianmowujin"/>
+</selector>

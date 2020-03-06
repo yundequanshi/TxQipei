@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/cm_bg_layout"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/topbar"
+        style="@style/topbar_layout">
+
+        <ImageButton
+            android:id="@+id/top_btn_left"
+            style="@style/topbar_btn_left"
+            android:src="@drawable/qp_cm_btn_back" />
+
+        <TextView
+            android:id="@+id/top_tv_title"
+            style="@style/topbar_title"
+            android:layout_centerInParent="true"
+            android:text="事故车列表" />
+
+        <ImageView
+            android:id="@+id/tab2_iv_search"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/interact_iv_search"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitCenter"
+            android:clickable="true"
+            android:padding="13dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/tab2_iv_add"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/interact_iv_add"
+            android:layout_toLeftOf="@id/tab2_iv_search"
+            android:scaleType="fitCenter"
+            android:clickable="true"
+            android:padding="13dp"
+            />
+    </RelativeLayout>
+
+
+    <com.ab.view.pullview.AbPullToRefreshView
+        android:id="@+id/part_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <GridView
+            android:id="@+id/accident_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:horizontalSpacing="18dp"
+            android:verticalSpacing="10dp"
+            android:listSelector="@android:color/transparent"
+            />
+
+    </com.ab.view.pullview.AbPullToRefreshView>
+
+</LinearLayout>

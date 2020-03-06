@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cm_bg_layout"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="50dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cm_side_w"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        style="@style/accident_tv_label"
+                        android:text="车型："
+                        />
+                    <View style="@style/cm_divider"/>
+
+                    <TextView
+                        style="@style/accident_tv_label"
+                        android:text="子车型："
+                        android:drawableRight="@null"
+                        />
+                    <View style="@style/cm_divider"/>
+
+                    <TextView
+                        style="@style/accident_tv_label"
+                        android:text="排量年款："
+                        android:drawableRight="@null"
+                        />
+                    <View style="@style/cm_divider"/>
+                    <TextView
+                        style="@style/accident_tv_label"
+                        android:drawableRight="@null"
+                        android:text="车架号："
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="80dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/offer_tv_type"
+                        style="@style/accident_tv_content"
+                        android:contentDescription="车型名称"
+                        android:layout_marginLeft="10dp"
+                        />
+                    <EditText
+                        android:id="@+id/offer_tv_child"
+                        style="@style/offer_et_content"
+                        android:contentDescription="子车型"
+                        />
+                    <EditText
+                        android:id="@+id/offer_et_year"
+                        style="@style/offer_et_content"
+                        android:contentDescription="排量年款"
+                        />
+                    <EditText
+                        android:id="@+id/offer_et_frame"
+                        style="@style/offer_et_content"
+                        android:contentDescription="车架号"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/offer_tv_add"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/cm_side_w"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/list_cpzj"
+                android:paddingLeft="10dp"
+                android:drawablePadding="10dp"
+                android:text="点击添加配件"
+                android:textColor="@color/cm_btn_blue"
+                android:textSize="@dimen/tv_size_body2"
+                />
+
+            <ListView
+                android:id="@+id/offer_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:scrollbars="none"
+                android:padding="1dp"
+                android:divider="@drawable/cm_divider"
+                android:background="@drawable/cm_side_w"
+                android:listSelector="@android:color/transparent"
+                />
+        </LinearLayout>
+
+
+    <Button
+        android:id="@+id/accident_btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/tv_size_body2"
+        android:text="提 交"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/cm_btn_blue"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cm_bg_layout"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_layout" >
+
+        <ImageButton
+            android:id="@+id/top_btn_left"
+            style="@style/topbar_btn_left"
+            android:src="@drawable/qp_cm_btn_back" />
+
+        <TextView
+            android:id="@+id/top_tv_title"
+            style="@style/topbar_title"
+            android:layout_centerInParent="true"
+            android:text="我的拆车件" />
+
+        <ImageButton
+            android:id="@+id/accident_ib_add"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/message_add" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/accident_ly_search"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/top_bar"
+        android:background="@color/login_gray"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/accident_et_search"
+            style="@style/home_et_search"
+            android:layout_centerInParent="true"
+            android:layout_margin="8dp"
+            android:background="@drawable/home_et_search"
+            android:hint="请输入..." />
+
+        <ImageView
+            android:id="@+id/accident_iv_search"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/home_top_search" />
+    </RelativeLayout>
+
+    <com.ab.view.pullview.AbPullToRefreshView
+        android:id="@+id/accident_lv_car"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top_bar"
+        android:layout_marginTop="10dp"
+        android:background="@color/common_white"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/mListView"
+            style="@style/common_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/cm_bg_layout"
+            android:dividerHeight="1dp" />
+    </com.ab.view.pullview.AbPullToRefreshView>
+    <!--
+     <com.zuomei.widget.pulltorefresh.PullToRefreshListView
+        android:id="@+id/accident_lv_car"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:background="@color/common_white"
+		android:layout_below="@id/accident_ly_search"
+		android:layout_marginTop="5dp"
+		android:divider="@drawable/common_divider"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" 
+        />
+    -->
+
+</LinearLayout>

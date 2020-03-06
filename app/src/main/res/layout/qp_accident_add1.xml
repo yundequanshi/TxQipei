@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cm_bg_layout"
+    >
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        style="@style/topbar_layout">
+
+        <ImageButton
+            android:id="@+id/top_btn_left"
+            style="@style/topbar_btn_left"
+            android:src="@drawable/qp_cm_btn_back" />
+
+        <TextView
+            android:id="@+id/top_tv_title"
+            style="@style/topbar_title"
+            android:layout_centerInParent="true"
+            android:text="事故车添加" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/accident_add_step1"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tv_black1"
+                android:textSize="@dimen/tv_size_body2"
+                android:text="       请上传标准姿势拍摄的照片，可让买家更全面的了解您的爱车。我们的数据表明，拍摄标准照片，可提高50%的成交率！"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:lineSpacingExtra="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/cm_side_w"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="照片上传"
+                    android:textColor="@color/tv_black1"
+                    android:textSize="@dimen/tv_size_body2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    />
+                <View style="@style/cm_divider"/>
+                <TextView
+                    android:id="@+id/accident_tv_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="从相册选一张"
+                    android:textColor="@color/tv_black1"
+                    android:textSize="@dimen/tv_size_body2"
+                    android:drawableRight="@drawable/cm_iv_right"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    />
+                <View style="@style/cm_divider"/>
+                <TextView
+                    android:id="@+id/accident_tv_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="拍一张照片    "
+                    android:textColor="@color/tv_black1"
+                    android:textSize="@dimen/tv_size_body2"
+                    android:drawableRight="@drawable/cm_iv_right"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    />
+
+            </LinearLayout>
+
+            <com.zuomei.widget.ScrollGridView
+                android:id="@+id/accident_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3"
+                android:horizontalSpacing="10dp"
+                android:verticalSpacing="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:listSelector="@android:color/transparent"
+                />
+
+            <Button
+                android:id="@+id/accident_btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/tv_size_body2"
+                android:text="下一步"
+                android:background="@drawable/cm_btn_blue"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

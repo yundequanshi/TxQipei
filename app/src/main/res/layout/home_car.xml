@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_register_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/common_white"
+    >
+ <!-- 标题 -->
+<!--<RelativeLayout
+    android:id="@+id/top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@color/common_blue"
+    >
+    <ImageView
+        android:id="@+id/top_back"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/common_back"
+        android:scaleType="centerInside"
+        android:paddingRight="20dp"
+        />
+    <TextView
+        android:id="@+id/top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="车辆选择"
+        android:layout_centerInParent="true"
+        android:textColor="@color/common_white"
+        android:textSize="23sp"
+        />
+</RelativeLayout>-->
+ <!--<RelativeLayout
+       android:id="@+id/home_ly_business"
+       android:layout_width="match_parent"
+       android:layout_height="55dp"
+       android:background="@color/login_gray"
+       >
+      <EditText
+          android:id="@+id/home_et_search"
+          style="@style/home_et_search"
+          android:layout_margin="8dp"
+          android:hint="搜索商家名称或主营"
+          android:background="@drawable/home_et_search"
+          android:layout_centerInParent="true"
+          />
+   	   
+	 <ImageView
+        android:id="@+id/btn_search"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/home_top_search"
+        android:scaleType="centerInside"
+        android:paddingRight="10dp"
+        />
+</RelativeLayout>-->
+
+ <!-- <RelativeLayout
+       android:id="@+id/home_ly_business"
+       android:layout_width="match_parent"
+       android:layout_height="55dp"
+       android:background="@color/login_gray"
+       android:layout_below="@+id/top_bar"
+       >
+      <EditText
+          android:id="@+id/home_et_search"
+          style="@style/home_et_search"
+          android:layout_margin="8dp"
+          android:hint="车辆选择"
+          android:background="@drawable/home_et_search"
+          android:layout_centerInParent="true"
+          />
+	 <ImageView
+        android:id="@+id/login_top_back"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/home_top_search"
+        android:scaleType="centerInside"
+        android:paddingRight="10dp"
+        />
+</RelativeLayout> -->
+    
+   	<ListView
+        android:id="@+id/home_lv_car"
+		style="@style/common_list"      
+		android:background="@color/common_white"
+		android:layout_below="@id/home_ly_business"
+        android:clickable="true"
+        />
+   	<com.zuomei.widget.sortlistview.SideBar
+            android:id="@+id/home_sidrbar"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+              android:layout_below="@id/home_ly_business"
+              android:layout_alignParentRight="true"
+            />
+     <TextView
+            android:id="@+id/home_tv_dialog"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/common_black"
+            android:textSize="30sp"
+            android:visibility="invisible" 
+            />
+    <com.zuomei.auxiliary.MLHomeCarView
+        android:id="@+id/car_carview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_marginLeft="70dp"
+        android:background="@color/common_white"
+        	android:layout_below="@id/top_bar"
+        	android:layout_alignParentRight="true"
+        />
+
+    <com.zuomei.auxiliary.MLHomeCarCollectView
+        android:id="@+id/car_collect_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_marginLeft="70dp"
+        android:background="@color/common_white"
+        android:layout_below="@id/top_bar"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

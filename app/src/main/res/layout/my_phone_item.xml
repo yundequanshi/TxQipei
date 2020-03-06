@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:background="@color/common_white">
+
+   <ImageView
+      android:id="@+id/tonghua_image"
+      android:layout_width="70dp"
+      android:layout_height="70dp"
+      android:layout_centerVertical="true"
+      android:padding="5dp" />
+
+   <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+      android:layout_toRightOf="@id/tonghua_image"
+      android:paddingTop="10dp"
+      android:paddingRight="15dp"
+      android:background="@color/white">
+
+      <TextView
+         android:id="@+id/phone_tv_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_toRightOf="@id/money_iv_icon"
+         android:ellipsize="end"
+         android:maxEms="10"
+         android:singleLine="true"
+         android:text="济南东方汽配济南东方汽配济南东方汽配济南东方汽配济南东方汽配"
+         android:textColor="@color/common_black"
+         android:textSize="@dimen/tv_size_subhead" />
+
+      <TextView
+         android:id="@+id/phone_tv_number"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="6dp"
+         android:layout_below="@id/phone_tv_name"
+         android:layout_toRightOf="@id/money_iv_icon"
+         android:text="13099827365"
+         android:textColor="@color/tv_black2"
+         android:textSize="@dimen/tv_size_body2" />
+
+      <TextView
+         android:id="@+id/my_money_time"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="6dp"
+         android:layout_below="@id/phone_tv_number"
+         android:singleLine="true"
+         android:text="6月8日"
+         android:textColor="@color/tv_black2"
+         android:textSize="@dimen/tv_size_body2" />
+
+      <TextView
+         android:id="@+id/my_money_sc"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="6dp"
+         android:layout_below="@id/my_money_time"
+         android:drawableLeft="@drawable/tonghuacishu"
+         android:drawablePadding="6dp"
+         android:text="通话21分钟"
+         android:textColor="@color/tv_black2"
+         android:textSize="@dimen/tv_size_body2"
+         android:visibility="gone" />
+
+      <ImageView
+         android:id="@+id/phone_iv"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:src="@drawable/dianhuajiluboda" />
+
+
+      <View
+         android:id="@+id/phone_tv_diriver"
+         android:layout_width="0.4dp"
+         android:layout_height="60dp"
+         android:layout_marginRight="15dp"
+         android:layout_centerVertical="true"
+         android:layout_toLeftOf="@id/phone_iv"
+         android:background="@color/cm_divider" />
+
+      <TextView
+         android:id="@+id/phone_tv_count"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginRight="3dp"
+         android:layout_toLeftOf="@id/phone_tv_diriver"
+         android:textColor="@color/tv_black1"
+         android:textSize="14sp" />
+
+   </RelativeLayout>
+
+</RelativeLayout>

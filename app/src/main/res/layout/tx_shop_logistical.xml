@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/accident_add_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cm_bg_layout"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        style="@style/topbar_layout" >
+
+        <ImageButton
+            android:id="@+id/top_btn_left"
+            style="@style/topbar_btn_left"
+            android:src="@drawable/common_back" />
+
+        <TextView
+            android:id="@+id/top_tv_title"
+            style="@style/topbar_title"
+            android:layout_centerInParent="true"
+            android:text="物流信息"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/common_white"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/logistical_tv_label"
+                    style="@style/common_text_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:text="物流名称 　"
+                    android:textColor="@color/tv_black1" />
+
+                <TextView
+                    android:id="@+id/add_tv_driver1"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/logistical_tv_label"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="#989898" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/accident_orange_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left|center_vertical"
+                    android:layout_toRightOf="@id/add_tv_driver1"
+                    android:layout_marginLeft="10dp"
+                    />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/common_divider" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/common_white"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/logistical_tv_label1"
+            style="@style/common_text_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:text="物流单号 　"
+            android:textColor="@color/tv_black1" />
+
+        <TextView
+            android:id="@+id/add_tv_driver2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/logistical_tv_label1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#989898" />
+
+        <TextView
+            android:id="@+id/tv_order"
+            style="@style/accident_orange_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="left|center_vertical"
+            android:layout_toRightOf="@id/add_tv_driver2"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/common_divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/common_white"
+        android:padding="5dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/logistical_tv_label2"
+            style="@style/common_text_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:text="联系电话 　"
+            android:textColor="@color/tv_black1" />
+
+        <TextView
+            android:id="@+id/add_tv_driver3"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/logistical_tv_label2"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#989898" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            style="@style/accident_orange_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="left|center_vertical"
+            android:layout_toRightOf="@id/add_tv_driver3"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/cm_font_blue1"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:background="@drawable/common_divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/common_white"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/logistical_tv_label3"
+            style="@style/common_text_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:text="物流电话 　"
+            android:textColor="@color/tv_black1" />
+
+        <TextView
+            android:id="@+id/add_tv_driver4"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/logistical_tv_label3"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#989898" />
+
+        <TextView
+            android:id="@+id/tv_phone_end"
+            style="@style/accident_orange_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="left|center_vertical"
+            android:layout_toRightOf="@id/add_tv_driver4"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/cm_font_blue1"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

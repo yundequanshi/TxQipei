@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/accident_iv_icon"
+        android:src="@drawable/sgc_photo"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/tv_black1"
+        android:textSize="@dimen/tv_size_subhead"
+        android:text="Large Text"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="3dp"
+        android:id="@+id/accident_iv_name" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/tv_black2"
+        android:textSize="@dimen/tv_size_body2"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="6dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="Large Text"
+        android:id="@+id/accident_tv_mileage" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/tv_black2"
+        android:textSize="@dimen/tv_size_body2"
+        android:text="Large Text"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="6dp"
+        android:id="@+id/accident_tv_time" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1858万"
+        android:gravity="right"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="6dp"
+        android:textColor="@color/tv_black1"
+        android:textSize="@dimen/tv_size_subhead"
+        android:id="@+id/accident_tv_price" />
+</LinearLayout>

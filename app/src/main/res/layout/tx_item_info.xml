@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/groupon_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15:26"
+        android:layout_marginTop="10dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:gravity="center"
+        android:textSize="@dimen/tv_size_body2"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/info_tv_time"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/groupon_tv_time"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:background="@drawable/cm_side_w"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/groupon_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="标题"
+            android:textColor="@color/tv_black1"
+            android:textSize="@dimen/tv_size_subhead"
+            />
+
+        <ImageView
+            android:id="@+id/groupon_iv"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:src="@drawable/test3"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitCenter"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/cm_divider"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="点击查看"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/tv_black1"
+            android:textSize="@dimen/tv_size_body2"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

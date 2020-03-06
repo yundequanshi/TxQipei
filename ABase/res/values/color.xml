@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="cm_app_color">#74B9FB</color>
+
+       <!-- 通用 -->
+      <color name="tv_black1">#3c3c3c</color>   <!-- Text -->
+      <color name="tv_black2">#979797</color>  <!-- Seconddary Text -->
+      <color name="tv_black3">#d1d1d1</color> <!-- Hint Text -->
+      <color name="tv_black4">#eaeaea</color>  <!-- Drividers -->
+    
+</resources>

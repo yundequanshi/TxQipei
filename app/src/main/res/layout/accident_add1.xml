@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/accident_add_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white" >
+
+    <!-- 标题 -->
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/head_back_nomall" >
+
+        <ImageView
+            android:id="@+id/top_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/common_back" />
+
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="二手车添加"
+            android:textColor="@color/common_white"
+            android:textSize="23sp" />
+        
+        <Button
+            android:id="@+id/accident_btn_next_fabu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/nav_baocun"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_bar" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/accident_iv_step"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitStart"
+                android:src="@drawable/accident_add_step1"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/accident_tv_state"
+                style="@style/common_text_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/accident_iv_step"
+                android:background="#f2f2f2"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="亲，横向拍摄效果更佳，上传以下角度照片，成交率会提升1倍哦！"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/accident_tv_state"
+                android:orientation="vertical"
+                >
+
+                <com.txsh.utils.GridViewInScrollView
+                    android:id="@+id/accident_gv_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/common_transparent"
+                    android:columnWidth="100dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="0dp"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="3"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="3dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f2f2f2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/accident_gv_photo"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/paizhao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:drawableLeft="@drawable/paizhaotubiao"
+                            android:text="拍照"
+                            android:textColor="#8CCBFC" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:background="#f2f2f2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/xiangcexuanze"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:drawableLeft="@drawable/xiangcexuanze"
+                            android:text="从相册选择"
+                            android:textColor="#8CCBFC" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/accident_add2" />
+
+            <include layout="@layout/accident_add3" />
+
+            <Button
+                android:id="@+id/accident_btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/login_btn"
+                android:text="下一步"
+                android:textColor="@color/common_white"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

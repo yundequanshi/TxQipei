@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:background="@color/cm_bg_layout_bj"
+   android:fitsSystemWindows="true"
+   android:orientation="vertical"
+   tools:context="com.txsh.quote.deport.QuotedListActivity">
+
+   <RelativeLayout
+      android:id="@+id/topbar"
+      style="@style/top_bar_layout"
+      android:background="@color/bj_head_back_nomall">
+
+      <ImageButton
+         android:id="@+id/top_btn_left"
+         style="@style/top_bar_btn_left"
+         android:onClick="back"
+         android:src="@mipmap/bj_common_back" />
+
+      <TextView
+         android:id="@+id/top_tv_title"
+         style="@style/top_bar_title"
+         android:layout_centerInParent="true"
+         android:text="@string/quoted_price_head_name"
+         android:textColor="@color/cm_white" />
+
+      <TextView
+         android:id="@+id/tv_publish"
+         android:layout_width="50dp"
+         android:layout_height="match_parent"
+         android:layout_alignParentRight="true"
+         android:clickable="true"
+         android:gravity="center"
+         android:onClick="publishOnClick"
+         android:text="@string/quoted_price_head_right"
+         android:textColor="@color/cm_white"
+         android:textSize="@dimen/cm_tv_size_body2" />
+   </RelativeLayout>
+
+   <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+      android:id="@+id/swipyRefreshLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp">
+
+      <ListView
+         android:id="@+id/lv_price"
+         style="@style/cm_list_view"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:divider="@color/cm_bg_layout_bj"
+         android:dividerHeight="10dp" />
+   </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+</LinearLayout>

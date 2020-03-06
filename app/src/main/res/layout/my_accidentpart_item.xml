@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/accident_add_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cm_bg_layout"
+    >
+    <RelativeLayout
+        android:id="@+id/part_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cm_side_w"
+        android:padding="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0.2dp"
+        android:layout_marginBottom="0.2dp"
+        >
+    <ImageView
+        android:id="@+id/part_iv_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/sgc_photo"
+        android:scaleType="centerCrop"
+        />
+
+
+
+
+
+    <TextView
+        android:id="@+id/part_tv_businessname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商家名称"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/tv_black1"
+        android:textSize="@dimen/tv_size_subhead"
+        android:layout_toRightOf="@id/part_iv_icon"
+        />
+
+
+        <TextView
+            android:id="@+id/part_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015-1-25 15:25"
+            android:textColor="@color/common_darker_gray"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_below="@id/part_tv_businessname"
+            android:layout_alignLeft="@id/part_tv_businessname"
+            android:layout_marginTop="8dp"
+            />
+
+    <TextView
+        android:id="@+id/part_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保时捷卡宴2013款"
+        android:textColor="@color/common_black"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textSize="@dimen/tv_size_body2"
+        android:layout_below="@id/part_time"
+        android:layout_alignLeft="@id/part_time"
+        />
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/patr_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yibaojia"
+        android:layout_alignTop="@id/part_rl"
+        android:layout_alignRight="@id/part_rl"
+        android:layout_marginRight="-4dp"
+        android:layout_marginTop="6dp"
+        />
+</RelativeLayout>

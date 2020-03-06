@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2" >
+
+    <com.ab.view.pullview.AbPullToRefreshView
+        android:id="@+id/interact_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/mListView"
+            style="@style/common_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/cm_bg_layout"
+            android:dividerHeight="10dp" />
+    </com.ab.view.pullview.AbPullToRefreshView>
+
+    <RelativeLayout
+        android:id="@+id/interact_rl_reply"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:paddingBottom="1dp"
+        android:paddingRight="1dp"
+        android:paddingTop="3dp"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/cm_divider" />
+
+        <Button
+            android:id="@+id/interact_btn_reply"
+            android:layout_width="60dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/message_btn_reply"
+            android:text="回复"
+            android:textColor="@color/common_white"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/interact_btn_reply"
+            android:background="@drawable/fh_sr" >
+
+            <EditText
+                android:id="@+id/interact_et_reply"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="left|bottom"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:textSize="@dimen/tv_size_body2" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/interact_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fanhuidingbu_pre"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="50dp"
+        />
+</RelativeLayout>

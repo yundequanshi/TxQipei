@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/cm_side_w"
+    >
+
+<!-- <TextView
+    android:id="@+id/phone_tv_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/common_black"
+    android:textSize="18sp"
+    android:text="济南东方汽配济南东方汽配济南东方汽配济南东方汽配济南东方汽配"
+    android:layout_toRightOf="@id/money_iv_icon"
+    android:singleLine="true"
+    android:maxEms="8"
+    android:ellipsize="end"
+    android:layout_marginTop="10dp"
+    android:layout_alignParentTop="true"
+    /> -->
+<TextView
+    android:id="@+id/phone_tv_number"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     android:textColor="@color/common_black"
+    android:textSize="@dimen/tv_size_subhead"
+    android:drawablePadding="6dp"
+    android:text="13099827365"
+    android:layout_toRightOf="@id/money_iv_icon"
+      android:layout_marginTop="10dp"
+    android:layout_alignParentTop="true"
+    />
+<TextView
+    android:id="@+id/my_money_time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/tv_black2"
+    android:textSize="@dimen/tv_size_body2"
+    android:singleLine="true"
+    android:drawablePadding="6dp"
+    android:text="6月8日6月8日6月8日6月8日6月8日6月8日6月8日"
+    android:layout_alignParentRight="true"
+    android:layout_alignTop="@id/phone_tv_number"
+    android:layout_marginBottom="10dp"
+    />
+<TextView
+    android:id="@+id/my_money_sc"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/common_darker_gray"
+    android:textSize="@dimen/tv_size_body3"
+    android:text="通话21分钟"
+    android:layout_alignParentBottom="true"
+    android:layout_alignBottom="@id/phone_tv_number"
+    />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/yijianboda"
+        android:layout_alignTop="@id/my_money_sc"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>
+</RelativeLayout>

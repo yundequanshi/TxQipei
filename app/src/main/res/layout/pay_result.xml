@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/common_white"
+    >
+ <!-- 标题 -->
+<RelativeLayout
+    android:id="@+id/top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@color/common_blue"
+    >
+    <ImageView
+        android:id="@+id/top_back"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/common_back"
+        android:scaleType="centerInside"
+        android:paddingRight="20dp"
+        />
+    <TextView
+        android:id="@+id/top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="支付结果"
+        android:layout_centerInParent="true"
+        android:textColor="@color/common_white"
+        android:textSize="23sp"
+        />
+</RelativeLayout>
+ <RelativeLayout
+       android:id="@+id/pay_rl_statues"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/top_bar"
+       android:layout_marginTop="50dp"
+       >
+   	   
+	 <ImageView
+        android:id="@+id/pay_iv_ret"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/pay_success"
+        android:scaleType="centerInside"
+         android:visibility="invisible"
+        />
+	 <TextView
+	     android:id="@+id/pay_tv_ret"
+		 android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+		 android:layout_toRightOf="@id/pay_iv_ret"
+		 android:textColor="@color/common_black"
+		 android:textSize="20sp"
+		 android:layout_centerVertical="true"
+		 android:layout_marginLeft="15dp"
+		 android:text="支付成功"
+	     />
+	
+</RelativeLayout>
+ <TextView
+	     android:id="@+id/pay_tv_order"
+		 android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+		 android:layout_below="@id/pay_rl_statues"
+		 android:textColor="@color/common_black"
+		 android:layout_alignLeft="@id/pay_rl_statues"
+		 android:textSize="20sp"
+		 android:text="订单号:121212121"
+		 android:layout_marginTop="35dp"
+		   android:layout_marginLeft="30dp"
+		   android:visibility="invisible"
+	     />
+ 
+ <Button
+         android:id="@+id/pay_btn_ok"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:layout_marginLeft="20dp"
+    	 android:layout_marginRight="20dp"
+    	 android:background="@drawable/cm_btn_blue"
+    	 android:text="返回"
+    	 android:gravity="center"
+    	 android:textColor="@color/common_white"
+    	 android:textSize="18sp"
+    	 android:layout_alignParentBottom="true"
+    	 android:layout_marginBottom="20dp"
+         />  
+</RelativeLayout>

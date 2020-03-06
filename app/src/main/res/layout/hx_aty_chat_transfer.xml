@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/cm_layout_bg"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+    <!--标题 -->
+    <RelativeLayout
+        android:id="@+id/rl_titlebar"
+        style="@style/topbar_layout">
+
+        <ImageButton
+            android:id="@+id/titlebar_tv_left"
+            style="@style/topbar_btn_left"
+            android:background="@null"
+            android:onClick="back"
+            android:src="@drawable/cm_back_btn"/>
+
+        <TextView
+            android:id="@+id/titlebar_tv"
+            style="@style/topbar_title"
+            android:layout_centerInParent="true"
+            android:text="转账"/>
+
+        <!--<TextView-->
+        <!--android:id="@+id/titlebar_tv_right"-->
+        <!--style="@style/topbar_ti_right"-->
+        <!--android:drawableTop="@drawable/biz_iv_collect"-->
+        <!--android:text="@string/biz_collect" />-->
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="金额："
+            android:textColor="@color/cm_tv_black2"
+            android:textSize="@dimen/cm_tv_size_body2"/>
+
+        <EditText
+            android:id="@+id/transfer_ed_money"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入转账金额"
+            android:inputType="numberDecimal"
+            android:maxLength="8"
+            android:singleLine="true"
+            android:textColor="@color/cm_tv_black2"
+            android:textSize="@dimen/cm_tv_size_body2"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/order_tv_fangshi"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="充值方式："
+            android:textColor="@color/cm_tv_black2"
+            android:textSize="@dimen/cm_tv_size_body2"/>
+
+        <RelativeLayout
+            android:id="@+id/reach_rel_weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="8dp"
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/orderpaydetail_weixinlogo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/list_wxzf"/>
+
+            <TextView
+                android:id="@+id/orderpaydetail_weixintext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/orderpaydetail_weixinlogo"
+                android:text="微信支付"
+                android:textColor="@color/cm_tv_black1"
+                android:textSize="@dimen/cm_tv_size_subhead"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orderpaydetail_weixintext"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/orderpaydetail_weixinlogo"
+                android:text="推荐安装微信5.0以上版本"
+                android:textColor="@color/cm_tv_black1"
+                android:textSize="@dimen/cm_tv_size_body2"/>
+
+            <CheckBox
+                android:id="@+id/orderpaydetail_weixinchek"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/cm_select_btn"
+                android:button="@null"
+                android:checked="true"
+                android:clickable="false"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:id="@+id/reach_rel_alipay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="8dp"
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/orderpaydetail_alipaylogo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/list_zfb"/>
+
+            <TextView
+                android:id="@+id/orderpaydetail_alipaytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/orderpaydetail_alipaylogo"
+                android:text="支付宝支付"
+                android:textColor="@color/cm_tv_black1"
+                android:textSize="@dimen/cm_tv_size_subhead"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orderpaydetail_alipaytext"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/orderpaydetail_alipaylogo"
+                android:text="推荐支付宝用户使用"
+                android:textColor="@color/cm_tv_black1"
+                android:textSize="@dimen/cm_tv_size_body2"/>
+
+            <CheckBox
+                android:id="@+id/orderpaydetail_alipaychek"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/cm_select_btn"
+                android:button="@null"
+                android:clickable="false"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/reachmoney_btn_queding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/biz_btn_save"
+        android:padding="10dp"
+        android:text="确   定"
+        android:textColor="@color/cm_white"
+        android:textSize="@dimen/cm_tv_size_subhead"/>
+
+
+</LinearLayout>

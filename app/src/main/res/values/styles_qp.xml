@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ========================== 通用样式 ============================ -->
+    <!-- 顶部标题栏 -->
+    <style name="topbar_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/topBar_height</item>
+        <item name="android:background">@color/common_blue</item>
+    </style>
+
+    <style name="topbar_btn_left">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingLeft">@dimen/topBar_left_padding</item>
+        <item name="android:paddingRight">@dimen/topBar_left_padding</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <!--<item name="android:background">@drawable/cm_btn_back</item>-->
+
+    <style name="topbar_btn_right">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+
+        <item name="android:paddingLeft">@dimen/topBar_left_padding</item>
+        <item name="android:paddingRight">@dimen/topBar_left_padding</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="topbar_tv_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/cm_btn_back</item>
+        <item name="android:paddingLeft">@dimen/topBar_left_padding</item>
+        <item name="android:paddingRight">@dimen/topBar_left_padding</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/tv_size_subhead</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+
+    <style name="topbar_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">23sp</item>
+    </style>
+
+
+    <style name="cm_divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.4dp</item>
+        <item name="android:background">@color/cm_divider</item>
+    </style>
+
+
+    <!--发现-->
+    <style name="fount_tv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/cm_side_right</item>
+        <item name="android:textColor">@color/tv_black1</item>
+        <item name="android:textSize">@dimen/tv_size_body2</item>
+    </style>
+
+    <style name="offer_et_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColor">@color/tv_black1</item>
+        <item name="android:textSize">@dimen/tv_size_body2</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">0.4dp</item>
+    </style>
+
+    <!--事故车-step2-->
+    <style name="accident_tv_label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:drawableRight">@drawable/cm_iv_right</item>
+        <item name="android:textColor">@color/tv_black1</item>
+        <item name="android:textSize">@dimen/tv_size_body2</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:drawablePadding">15dp</item>
+    </style>
+    <style name="accident_tv_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColor">@color/tv_black1</item>
+        <item name="android:textSize">@dimen/tv_size_body2</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:layout_marginRight">23dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">fillOnClick</item>
+    </style>
+
+
+    <!--我的-->
+    <style name="me_tv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:drawableRight">@drawable/cm_iv_right</item>
+        <item name="android:textColor">@color/tv_black1</item>
+        <item name="android:textSize">@dimen/tv_size_body2</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:drawablePadding">15dp</item>
+    </style>
+
+    <style name="me_divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.4dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:background">@color/cm_divider</item>
+    </style>
+<!--我的-个人中心 -->
+    <style name="person_tv_label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColor">@color/tv_black1</item>
+        <item name="android:textSize">@dimen/tv_size_body2</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:drawablePadding">15dp</item>
+    </style>
+    <style name="person_tv_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColor">@color/tv_black1</item>
+        <item name="android:textSize">@dimen/tv_size_body2</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginTop">0.4dp</item>
+    </style>
+
+
+    <style name="person_et_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColor">@color/tv_black1</item>
+        <item name="android:textSize">@dimen/tv_size_body2</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_marginLeft">120dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">0.4dp</item>
+    </style>
+
+
+    <style name="person_iv">
+        <item name="android:layout_width">22dp</item>
+        <item name="android:layout_height">22dp</item>
+    </style>
+
+    <style name="person_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/tv_size_subhead</item>
+    </style>
+</resources>

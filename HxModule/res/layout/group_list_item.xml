@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/header_group"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/ease_mm_listitem"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ease_groups_icon" />
+
+        <TextView
+            android:id="@+id/group_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="群聊"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/list_itease_primary_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

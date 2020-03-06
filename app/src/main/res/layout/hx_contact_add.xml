@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cm_white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!--标题 -->
+    <RelativeLayout
+        android:id="@+id/rl_titlebar"
+        style="@style/topbar_layout">
+
+        <ImageButton
+            android:id="@+id/titlebar_tv_left"
+            style="@style/topbar_btn_left"
+            android:onClick="back"
+            android:src="@drawable/cm_back_btn" />
+
+        <TextView
+            android:id="@+id/titlebar_tv"
+            style="@style/topbar_title"
+            android:layout_centerInParent="true"
+            android:text="添加好友" />
+
+        <TextView
+            android:id="@+id/titlebar_tv_right"
+            style="@style/topbar_tv_right"
+            android:gravity="center_vertical"
+            android:text="查找" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/cm_layout_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <EditText
+            android:id="@+id/add_serach_et"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/contact_search_bg"
+            android:ellipsize="end"
+            android:hint="请输入好友名称"
+            android:maxLines="1"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="@color/cm_tv_black1"
+            android:textSize="@dimen/cm_tv_size_body2" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/add_lv"
+        style="@style/cm_list_view" />
+</LinearLayout>

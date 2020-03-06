@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:background="@color/cm_white"
+   android:fitsSystemWindows="true"
+   android:orientation="vertical"
+   tools:context="com.txsh.shop.TXShopTypeActivity">
+
+   <RelativeLayout
+      android:id="@+id/topbar"
+      style="@style/topbar_layout">
+
+      <ImageButton
+         android:id="@+id/top_btn_left"
+         style="@style/topbar_btn_left"
+         android:onClick="back"
+         android:src="@drawable/qp_cm_btn_back" />
+
+      <TextView
+         android:id="@+id/top_tv_title"
+         style="@style/topbar_title"
+         android:layout_centerInParent="true"
+         android:text="商品类别" />
+   </RelativeLayout>
+
+
+   <ListView
+      android:id="@+id/shop_grid"
+      style="@style/cm_list_view"
+      android:layout_below="@+id/topbar" />
+
+   <com.zuomei.widget.sortlistview.SideBar
+      android:id="@+id/home_sidrbar"
+      android:layout_width="20dp"
+      android:layout_height="match_parent"
+      android:layout_alignParentRight="true"
+      android:layout_below="@id/topbar" />
+
+   <TextView
+      android:id="@+id/home_tv_dialog"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:layout_centerInParent="true"
+      android:gravity="center"
+      android:textColor="@color/common_black"
+      android:textSize="30sp"
+      android:visibility="invisible" />
+</RelativeLayout>

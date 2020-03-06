@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <color name="cm_app">#74B9FB</color>
+   <color name="cm_font_blue">#0c71d7</color>
+   <color name="cm_font_blue1">#279efa</color>
+
+   <color name="cm_btn_blue">#279EFA</color>
+   <color name="cm_btn_orange">#ED7602</color>
+   <color name="cm_btn_black">#3D3D3D</color>
+   <color name="cm_bg_layout">#F2F2F2</color>
+   <color name="cm_divider">#DCDCDC</color>
+   <color name="cm_head_side">#DBDBDB</color>
+   <color name="myBlue">#2394E4</color>
+   <color name="common_gray">#EBEBEB</color>
+   <color name="common_white">#ffffffff</color>
+   <color name="common_blue">#161A24</color>
+   <color name="common_shallow_blue">#04bbfd</color>
+   <color name="common_transparent">#00000000</color>
+   <color name="single_general_text">#d4252c</color>
+   <color name="common_black">#ff000000</color>
+   <color name="common_darker_gray">#aaa</color>
+   <color name="common_btn_select">#0277bd</color>
+   <color name="common_red">#D3252E</color>
+   <color name="common_orange">#FF632D</color>
+   <!-- 登录 -->
+   <color name="login_bg">#F0F0F0</color>
+   <color name="login_gray">#f0efed</color>
+   <color name="login_product_font">#00aeea</color>
+
+   <!-- 首页 -->
+   <color name="home_search_product">#c30000</color>
+   <color name="business_name">#d34142</color>
+   <color name="red">#FF0000</color>
+   <color name="green">#090</color>
+   <color name="blue">#009</color>
+   <color name="white">#FFF</color>
+   <color name="black">#000</color>
+   <color name="transparent">#0000</color>
+   <color name="gray">#DBDBDB</color>
+   <color name="index_green">#2EB497</color>
+   <color name="index_botton_tx">#585958</color>
+   <color name="index_left_gray">#585858</color>
+   <color name="index_left_item_gray_2">#999999</color>
+   <color name="index_left_item_blue">#33C2DC</color>
+   <color name="app_bg">#F8F8F8</color>
+   <color name="pull_refresh_textview">#000000</color>
+   <color name="gold">#000000</color>
+   <color name="aaa">#f6f6f6</color>
+   <!-- Head头部的颜色值 -->
+   <color name="head_back_nomall">#161A24</color>
+   <color name="head_back_press">#2F384D</color>s
+   <color name="index_tx_color">#535353</color>
+   <color name="index_tx_blue_color">#3496FA</color>
+
+
+   <!--积分商城-->
+   <color name="convert_tv_state1">#279efa</color>
+   <color name="convert_tv_state2">#6e6e6e</color>
+   <color name="convert_tv_state3">#ec8e1f</color>
+
+   <!--商城-->
+   <color name="shop_tv_price_main">#FF5000</color>
+   <color name="shop_tv_tab">#DD4444</color>
+   <color name="shopdetail_tv_price">#E90C0C</color>
+
+
+   <color name="mz_item_color">#F2F9FF</color>
+
+</resources>

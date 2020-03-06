@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp" >
+
+        <TextView
+            android:id="@+id/my_money_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="6月8日"
+            android:textColor="@color/tv_black1"
+            android:textSize="@dimen/tv_size_body2" />
+
+        
+
+        <TextView
+            android:id="@+id/my_money_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="9元"
+            android:textColor="@color/tv_black1"
+            android:textSize="@dimen/tv_size_subhead" />
+        
+        <TextView
+            android:id="@+id/my_money_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/my_money_add"
+            android:layout_marginRight="20dp"
+            android:text="成功"
+            android:textColor="@color/tv_black1"
+            android:textSize="@dimen/tv_size_body2" />
+    </RelativeLayout>
+
+</RelativeLayout>

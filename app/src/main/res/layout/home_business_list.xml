@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/login_register_root"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:background="@color/common_white">
+
+   <!-- 标题 -->
+
+   <RelativeLayout
+      android:id="@+id/top_bar"
+      android:layout_width="match_parent"
+      android:layout_height="52dp"
+      android:background="@color/head_back_nomall">
+
+      <ImageView
+         android:id="@+id/home_top_back"
+         android:layout_width="60dp"
+         android:layout_height="match_parent"
+         android:layout_marginLeft="10dp"
+         android:layout_centerVertical="true"
+         android:paddingRight="20dp"
+         android:scaleType="centerInside"
+         android:src="@drawable/common_back" />
+
+      <TextView
+         android:id="@+id/top_title"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:text="商家列表"
+         android:textColor="@color/white"
+         android:textSize="23sp" />
+
+      <Button
+         android:id="@+id/head_right_bt"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:paddingTop="3dp"
+         android:paddingLeft="7dp"
+         android:paddingRight="7dp"
+         android:background="@null"
+         android:drawablePadding="3dp"
+         android:drawableTop="@drawable/nav_sousuo"
+         android:gravity="center"
+         android:onClick="onClick"
+         android:text="搜索"
+         android:textColor="@color/white"
+         android:textSize="10sp"
+         android:visibility="gone" />
+   </RelativeLayout>
+
+   <RelativeLayout
+      android:id="@+id/home_ly_business"
+      android:layout_width="match_parent"
+      android:layout_height="55dp"
+      android:layout_below="@id/top_bar"
+      android:background="@color/login_gray"
+      android:visibility="gone">
+
+      <EditText
+         android:id="@+id/home_et_search"
+         style="@style/home_et_search"
+         android:layout_margin="8dp"
+         android:layout_centerInParent="true"
+         android:background="@drawable/home_et_search"
+         android:hint="搜索商家名称或主营" />
+   </RelativeLayout>
+
+   <com.ab.view.pullview.AbPullToRefreshView
+      android:id="@+id/_refressview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/home_ly_business"
+      android:background="@color/common_white"
+      android:orientation="vertical">
+
+      <ListView
+         android:id="@+id/home_lv_business"
+         style="@style/common_list"
+         android:layout_height="match_parent"
+         android:background="@color/common_white" />
+   </com.ab.view.pullview.AbPullToRefreshView>
+
+</RelativeLayout>

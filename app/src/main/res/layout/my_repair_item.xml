@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_marginTop="10dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/repair_iv_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/my_repair"
+        android:scaleType="fitCenter"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/repair_tv_carNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/repair_iv_icon"
+        android:text="鲁A434567"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+         />
+
+    <TextView
+        android:id="@+id/stock_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/repair_tv_carNum"
+        android:layout_toRightOf="@id/repair_tv_carNum"
+        android:gravity="right|center_vertical"
+        android:text="2014-05-12"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/repair_tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/repair_tv_carNum"
+        android:layout_below="@id/repair_tv_carNum"
+        android:layout_marginTop="8dp"
+        android:text="电话:13098728637"
+        android:textColor="@color/common_blue"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/repair_tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/repair_tv_carNum"
+        android:layout_marginTop="8dp"
+        android:text="39元"
+        android:textColor="@color/common_orange"
+        android:textSize="15sp" />
+
+</RelativeLayout>

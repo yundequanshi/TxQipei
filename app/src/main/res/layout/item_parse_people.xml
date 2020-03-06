@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:orientation="vertical">
+
+   <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      android:paddingLeft="10dp"
+      android:gravity="center_vertical"
+      android:orientation="horizontal">
+
+      <com.baichang.android.widget.roundedImageView.RoundedImageView
+         android:id="@+id/roundedImageView"
+         android:layout_width="40dp"
+         android:layout_height="40dp"
+         android:scaleType="fitXY"
+         android:src="@drawable/sina_web_default"
+         app:riv_oval="true" />
+
+      <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_marginLeft="10dp">
+
+         <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/cm_tv_black1"
+            android:textSize="@dimen/cm_tv_size_body14" />
+
+         <View
+            android:id="@+id/line"
+            style="@style/cm_line_horizontal"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true" />
+      </RelativeLayout>
+   </LinearLayout>
+
+</LinearLayout>

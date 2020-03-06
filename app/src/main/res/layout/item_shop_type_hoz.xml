@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:gravity="center"
+   android:orientation="vertical">
+
+   <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="56dp"
+      android:paddingLeft="10dp"
+      android:paddingRight="10dp"
+      android:gravity="center_vertical"
+      android:orientation="horizontal">
+
+      <cn.ml.base.widget.roundedimageview.RoundedImageView
+         android:id="@+id/iv_type"
+         android:layout_width="40dp"
+         android:layout_height="40dp"
+         android:scaleType="centerInside"
+         android:src="@mipmap/icon_more"
+         app:riv_border_width="0dp"
+         app:riv_oval="true" />
+
+      <TextView
+         android:id="@+id/tv_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:text="更多"
+         android:textColor="@color/tv_black1"
+         android:textSize="@dimen/tv_size_body2" />
+   </LinearLayout>
+
+</LinearLayout>

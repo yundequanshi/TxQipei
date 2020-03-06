@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cm_bg_layout"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        style="@style/topbar_layout">
+        <ImageButton
+            android:id="@+id/top_btn_left"
+            style="@style/topbar_btn_left"
+            android:src="@drawable/qp_cm_btn_back" />
+        <TextView
+            android:id="@+id/top_tv_title"
+            style="@style/topbar_title"
+            android:layout_centerInParent="true"
+            android:text="全部订单" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/interact_rg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/common_white"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/order_rb_tab1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/tab2_tv_nav"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="待付款"
+            android:textColor="@drawable/interact_tv_color" />
+        <!-- android:textColor="@drawable/interact_tv_color" -->
+
+        <RadioButton
+            android:id="@+id/order_rb_tab2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/tab2_tv_nav"
+            android:button="@null"
+            android:gravity="center"
+            android:text="待收货"
+            android:textColor="@drawable/interact_tv_color" />
+
+        <RadioButton
+            android:id="@+id/order_rb_tab3"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/tab2_tv_nav"
+            android:button="@null"
+            android:gravity="center"
+            android:text="已收货"
+            android:textColor="@drawable/interact_tv_color" />
+    </RadioGroup>
+    <View style="@style/cm_divider"/>
+
+    <com.ab.view.pullview.AbPullToRefreshView
+        android:id="@+id/order_refresh"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/common_white"
+        android:orientation="vertical" >
+    <ListView
+        android:id="@+id/order_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@android:color/transparent"
+        android:divider="@null"
+        android:scrollbars="none"
+        />
+    </com.ab.view.pullview.AbPullToRefreshView>
+</LinearLayout>

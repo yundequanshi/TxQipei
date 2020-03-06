@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/accident_add_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/common_white"
+    >
+ <!-- 标题 -->
+<RelativeLayout
+    android:id="@+id/top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@color/common_blue"
+    >
+    <ImageView
+        android:id="@+id/top_back"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/common_back"
+        android:scaleType="centerInside"
+        android:paddingRight="20dp"
+        />
+    <TextView
+        android:id="@+id/top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发布优势件"
+        android:layout_centerInParent="true"
+        android:textColor="@color/common_white"
+        android:textSize="23sp"
+        />
+</RelativeLayout>
+<ImageView
+    android:id="@+id/accident_iv_step"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/advan_add_step1"
+    android:layout_below="@id/top_bar"
+    android:scaleType="fitStart"
+    />
+    <TextView
+        android:id="@+id/accident_tv_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accident_iv_step"
+        android:text="    拍摄标准姿势，让买家更了解你的优势件。我们的数据表明，拍摄标准照片，成交率会高50%哦！"
+        android:textColor="@color/common_black"
+        android:textSize="18sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        />
+     <GridView
+                android:id="@+id/accident_gv_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/accident_tv_state"
+                android:background="@color/common_transparent"
+                android:columnWidth="100dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"
+                android:listSelector="@android:color/transparent"/>
+    	        <Button
+        android:id="@+id/accident_btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/login_btn"
+        android:text="下一步"
+        android:textColor="@color/common_white"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:background="@android:color/white">
+
+   <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:descendantFocusability="blocksDescendants">
+
+      <CheckBox
+         android:id="@+id/shopcar_item_rb"
+         android:layout_width="16dp"
+         android:layout_height="16dp"
+         android:layout_marginLeft="3dp"
+         android:layout_alignParentLeft="true"
+         android:layout_centerVertical="true"
+         android:background="@drawable/shopcar_rido_back"
+
+         android:button="@null"
+         android:clickable="false" />
+      \
+
+      <ImageView
+         android:id="@+id/shopcar_item_iv"
+         android:layout_width="110dp"
+         android:layout_height="80dp"
+         android:layout_marginTop="10dp"
+         android:layout_marginBottom="10dp"
+         android:layout_marginLeft="5dp"
+         android:layout_toRightOf="@+id/shopcar_item_rb"
+         android:scaleType="fitCenter"
+
+         android:src="@drawable/shop_default" />
+
+      <!--<RelativeLayout-->
+      <!--android:id="@+id/shopcar_rl_content"-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="115dp"-->
+      <!--android:layout_toRightOf="@+id/shopcar_item_iv"-->
+      <!--android:layout_centerVertical="true"-->
+      <!--android:layout_alignTop="@id/shopcar_item_iv"-->
+      <!-->-->
+
+      <TextView
+         android:id="@+id/shopcar_item_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:layout_marginLeft="10dp"
+         android:layout_toRightOf="@+id/shopcar_item_iv"
+         android:text="1111111"
+         android:textColor="@color/tv_black1"
+         android:textSize="@dimen/tv_size_body2" />
+
+      <!--    <TextView
+              android:id="@+id/shopcar_item_take"
+              android:layout_width="wrap_content"
+              android:layout_height="25dp"
+              android:text="╳"
+              android:layout_marginTop="6dp"
+              android:gravity="center"
+              android:textColor="@color/tv_black1"
+              android:textSize="16sp"
+              android:layout_alignLeft="@id/shopcar_item_name"
+              android:layout_below="@+id/shopcar_item_name"
+
+              android:layout_marginRight="3dp" />-->
+
+      <ImageButton
+         android:id="@+id/shopcar_item_subtract"
+         android:layout_width="20dp"
+         android:layout_height="20dp"
+         android:layout_marginTop="10dp"
+         android:layout_alignLeft="@id/shopcar_item_name"
+         android:layout_below="@+id/shopcar_item_name"
+         android:background="@drawable/shop_btn_sub" />
+
+      <EditText
+         android:id="@+id/shopcar_item_ed"
+         android:layout_width="45dp"
+         android:layout_height="20dp"
+         android:layout_alignBaseline="@+id/shopcar_item_subtract"
+         android:layout_alignBottom="@+id/shopcar_item_subtract"
+         android:layout_toRightOf="@+id/shopcar_item_subtract"
+         android:background="@drawable/shop_edit_price"
+         android:editable="false"
+         android:gravity="center"
+         android:inputType="number"
+         android:maxLength="4"
+         android:singleLine="true"
+         android:text="1"
+         android:textSize="12sp" />
+
+      <ImageButton
+         android:id="@+id/shopcar_item_add"
+         android:layout_width="20dp"
+         android:layout_height="20dp"
+         android:layout_alignTop="@+id/shopcar_item_subtract"
+         android:layout_toRightOf="@+id/shopcar_item_ed"
+         android:background="@drawable/shop_btn_add" />
+
+      <TextView
+         android:id="@+id/shopcar_item_Stock1"
+         android:layout_width="wrap_content"
+         android:layout_height="20dp"
+         android:layout_marginLeft="6dp"
+         android:layout_alignBaseline="@+id/shopcar_item_add"
+         android:layout_alignTop="@+id/shopcar_item_add"
+         android:layout_toLeftOf="@+id/orderpay_item_Stock"
+         android:ellipsize="end"
+         android:gravity="bottom"
+         android:singleLine="true"
+         android:text="运费"
+         android:textColor="@color/tv_black1"
+         android:textSize="@dimen/tv_size_body3" />
+
+      <TextView
+         android:id="@+id/orderpay_item_Stock"
+         android:layout_width="wrap_content"
+         android:layout_height="20dp"
+         android:layout_alignTop="@+id/shopcar_item_add"
+
+         android:layout_toLeftOf="@+id/shopcar_item_Stock2"
+         android:ellipsize="end"
+         android:gravity="bottom"
+         android:singleLine="true"
+         android:text="10.0"
+         android:textColor="@color/tv_black1"
+         android:textSize="@dimen/tv_size_body3" />
+
+      <TextView
+         android:id="@+id/shopcar_item_Stock2"
+         android:layout_width="wrap_content"
+         android:layout_height="20dp"
+         android:layout_marginRight="5dp"
+         android:layout_alignParentRight="true"
+         android:layout_alignTop="@+id/shopcar_item_add"
+         android:ellipsize="end"
+         android:gravity="bottom"
+         android:singleLine="true"
+         android:text="元"
+         android:textColor="@color/tv_black1"
+         android:textSize="@dimen/tv_size_body3" />
+
+      <TextView
+         android:id="@+id/shopcar_item_num"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:layout_marginLeft="10dp"
+         android:layout_below="@+id/shopcar_item_subtract"
+         android:layout_toRightOf="@+id/shopcar_item_iv"
+         android:gravity="center"
+         android:text="￥0000"
+         android:textColor="@color/red"
+         android:textSize="@dimen/tv_size_subhead" />
+
+      <!--<TextView-->
+      <!--android:id="@+id/shopcar_item_state"-->
+      <!--android:layout_width="wrap_content"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:layout_below="@+id/shopcar_item_subtract"-->
+      <!--android:layout_marginTop="10dp"-->
+      <!--android:layout_toRightOf="@+id/shopcar_item_num"-->
+      <!--android:gravity="center"-->
+      <!--android:text="元"-->
+      <!--android:textColor="@color/tv_black1"-->
+      <!--android:textSize="@dimen/tv_size_subhead" />-->
+      <!--</RelativeLayout>-->
+   </RelativeLayout>
+</LinearLayout>

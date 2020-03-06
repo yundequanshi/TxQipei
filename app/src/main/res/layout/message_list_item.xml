@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingBottom="12dp"
+    android:background="@android:color/white"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <ImageView
+        android:id="@+id/message_iv_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        />
+       <TextView
+        android:id="@+id/message_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="海阳天成轮胎"
+        android:gravity="top"
+        android:textColor="@color/common_blue"
+           android:layout_toRightOf="@id/message_iv_icon"
+        android:textSize="14sp" />    
+        
+         <TextView
+        android:id="@+id/message__tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="5dp"
+         android:layout_below="@id/message_tv_name"
+        android:text="单次要货500元以上，赠送相应礼品"
+        android:textColor="@color/common_black"
+        android:layout_alignLeft="@id/message_tv_name"
+        android:textSize="14sp" /> 
+            
+        <ImageView
+        android:id="@+id/message_iv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:maxWidth="150dp"
+        android:layout_alignLeft="@id/message_tv_name"
+        android:layout_below="@id/message__tv_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+         />
+        <!-- 时间 -->
+            
+        <TextView
+            android:id="@+id/message_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/common_darker_gray"
+            android:textSize="16sp"
+             android:layout_marginTop="4dp"
+             android:layout_alignLeft="@id/message_tv_name"
+             android:layout_below="@id/message_iv_image"
+            android:text="2014-07-21 09:21:11"
+            />    
+ <ImageButton
+        android:id="@+id/message_ib_reply"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:src="@drawable/interact_reply"
+        android:background="@null"
+        android:paddingLeft="40dp"
+        android:paddingTop="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp"
+        android:layout_alignBottom="@id/message_tv_time"
+        />
+     <LinearLayout
+         android:id="@+id/message_ly_reply"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+		android:background="@color/white"
+         android:orientation="vertical"
+         android:layout_marginTop="4dp"
+         android:layout_below="@id/message_tv_time"
+         android:layout_marginRight="5dp"
+         />
+         <!--  android:background="@drawable/message_reply_bg"  -->
+</RelativeLayout>

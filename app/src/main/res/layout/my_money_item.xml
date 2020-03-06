@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/money_iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/my_money_icon" 
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/my_money_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/money_iv_icon"
+            android:text="提现单号：5436546546"
+            android:textColor="@color/common_black"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/my_money_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="6月8日"
+            android:textColor="#989898"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/my_money_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_centerInParent="true"            
+            android:layout_marginTop="5dp"
+            android:text="成功"
+            android:textSize="14sp" 
+            android:textColor="#989898"/>
+        <!--
+     <TextView
+    android:id="@+id/my_money_order"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/common_darker_gray"
+    android:textSize="18sp"
+    android:layout_marginTop="3dp"
+    android:text="提现单号：5436546546"
+    android:layout_alignTop="@id/my_money_add"
+    android:layout_toRightOf="@id/money_iv_icon"
+    />
+        -->
+
+        <TextView
+            android:id="@+id/my_money_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:text="9元"
+            android:textSize="14sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/my_money_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/my_money_order"
+            android:layout_alignTop="@id/my_money_add"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/common_darker_gray"
+            android:textSize="18sp"
+            android:visibility="gone" 
+            android:text="aaa"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ml="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/common_blue" >
+
+        <ImageView
+            android:id="@+id/top_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/common_back" />
+
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="商家报价"
+            android:textColor="@color/common_white"
+            android:textSize="23sp" />
+
+        <Button
+            android:id="@+id/btn_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:padding="5dp"
+            android:text="提交"
+            android:textColor="@color/common_white"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_bar" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+      <!--       <TextView
+                android:id="@+id/tv_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:text="汽修厂备注：" /> -->
+
+<com.zuomei.widget.MLLineLayout 
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		ml:text="名   称:"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+>
+     <EditText
+         android:id="@+id/et_name"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="90dp"
+         android:textColor="@android:color/black"
+         android:layout_centerVertical="true"
+         android:background="@null"
+         android:enabled="false"
+         android:singleLine="true"
+         android:maxLength="15"
+         android:gravity="center_vertical"
+         />
+     
+ </com.zuomei.widget.MLLineLayout>
+
+<com.zuomei.widget.MLLineLayout 
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		ml:text="车    型:"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+>
+     <TextView
+         android:id="@+id/et_cartype"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textSize="18sp"
+           android:layout_marginLeft="90dp"
+         android:textColor="@android:color/black"
+         android:layout_centerVertical="true"
+         android:singleLine="true"
+         android:gravity="center_vertical"
+         />
+     
+ </com.zuomei.widget.MLLineLayout>
+
+<com.zuomei.widget.MLLineLayout 
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		ml:text="子车型:"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+>
+     <EditText
+         android:id="@+id/et_carchild"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+         android:textColor="@android:color/black"
+         android:layout_centerVertical="true"
+         android:background="@null"
+         android:singleLine="true"
+          android:enabled="false"
+         android:maxLength="15"
+         android:gravity="center_vertical"
+         />
+     
+ </com.zuomei.widget.MLLineLayout>
+ 
+
+<com.zuomei.widget.MLLineLayout 
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		ml:text="车架号:"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+>
+     <EditText
+         android:id="@+id/et_chejia"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+         android:textColor="@android:color/black"
+         android:layout_centerVertical="true"
+         android:background="@null"
+          android:enabled="false"
+         android:singleLine="true"
+         android:maxLength="20"
+         android:gravity="center_vertical"
+         />
+ </com.zuomei.widget.MLLineLayout>
+ 
+<com.zuomei.widget.MLLineLayout 
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		ml:text="年   份:"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+>
+     <EditText
+         android:id="@+id/et_year"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+         android:textColor="@android:color/black"
+         android:layout_centerVertical="true"
+         android:background="@null"
+          android:enabled="false"
+         android:singleLine="true"
+         android:inputType="number"
+          android:maxLength="4"
+         android:gravity="center_vertical"
+         />
+     
+ </com.zuomei.widget.MLLineLayout>
+
+            <EditText
+                android:id="@+id/et_dt_content"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:enabled="false"
+                android:focusable="false"
+                android:gravity="left|top"
+                android:maxLength="50"
+                android:textColor="@android:color/black" 
+                />
+
+            <ListView
+                android:id="@+id/mListView"
+                style="@style/common_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <TextView
+                  android:id="@+id/tv_clabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:text="商家备注：" />
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:gravity="left|top"
+                android:hint="请填写配件备注..."
+                android:maxLength="50"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

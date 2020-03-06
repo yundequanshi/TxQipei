@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="5dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <cn.ml.base.widget.roundedimageview.RoundedImageView
+                android:id="@+id/message_iv_icon"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
+                android:scaleType="centerCrop"
+                app:riv_border_color="@color/cm_head_side"
+                app:riv_border_width="2dp"
+                app:riv_corner_radius="30dp"
+                app:riv_oval="true" />
+
+            <TextView
+                android:id="@+id/message_tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="9dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_toRightOf="@id/message_iv_icon"
+                android:gravity="top"
+                android:text="成轮胎"
+                android:background="@color/cm_font_blue"
+                android:textColor="@color/common_white"
+                android:textSize="@dimen/tv_size_body3" />
+
+            <TextView
+                android:id="@+id/message_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_toRightOf="@id/message_tv_type"
+                android:gravity="top"
+                android:text="成轮胎"
+                android:textColor="@color/common_blue"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/interact_tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/message_tv_name"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/message_iv_icon"
+                android:text="2015-04-25"
+                android:textColor="@color/tv_black2"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/message__tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/message_iv_icon"
+                android:layout_marginTop="8dp"
+                android:autoLink="phone"
+                android:lineSpacingExtra="6dp"
+                android:paddingLeft="10dp"
+                android:contentDescription="单次要货500元以上，赠送相应礼品"
+                android:textColor="@color/common_black"
+                android:textSize="14sp" />
+
+
+
+            <com.txsh.utils.GridViewInScrollView
+                android:id="@+id/message_gv_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/message__tv_content"
+                android:layout_marginTop="3dp"
+                android:numColumns="3" />
+
+            <TextView
+                android:id="@+id/supply_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_alignTop="@id/interact_tv_time"
+                android:background="@drawable/yijianboda"
+                android:drawablePadding="4dp"
+                android:textColor="@color/tv_black1"
+                android:textSize="@dimen/tv_size_body2" />
+
+            <!--
+                     <ImageButton
+                         android:id="@+id/message_ib_reply"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentRight="true"
+                         android:layout_below="@id/message_gv_image"
+                         android:layout_marginRight="6dp"
+                         android:background="@null"
+                         android:src="@drawable/huifuanniu_pre" />
+
+                  <ImageButton
+                         android:id="@+id/message_ib_delete"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentRight="true"
+                         android:layout_marginRight="6dp"
+                         android:layout_toLeftOf="@id/message_ib_reply"
+                         android:background="@null"
+                         android:src="@drawable/shanchuanniu"
+                         android:visibility="gone" />
+                     &lt;!&ndash;&ndash;&gt;
+                     <LinearLayout
+                         android:id="@+id/message_ly_reply"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@id/message_ib_reply"
+                         android:layout_marginLeft="5dp"
+                         android:layout_marginRight="5dp"
+                         android:layout_marginTop="5dp"
+                         android:background="@drawable/huifubg"
+                         android:orientation="vertical" />-->
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

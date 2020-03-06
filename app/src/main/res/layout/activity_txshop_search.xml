@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:background="@color/cm_layout_bg"
+   android:orientation="vertical"
+   tools:context="com.txsh.shop.TXShopSearchActivity">
+
+   <RelativeLayout
+      android:id="@+id/top_bar"
+      android:layout_width="match_parent"
+      android:layout_height="52dp"
+      android:background="@color/common_blue">
+
+      <ImageView
+         android:id="@+id/home_top_back"
+         android:layout_width="60dp"
+         android:layout_height="match_parent"
+         android:layout_centerVertical="true"
+         android:paddingRight="20dp"
+         android:onClick="back"
+         android:scaleType="centerInside"
+         android:src="@drawable/common_back" />
+
+      <TextView
+         android:id="@+id/top_title"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:text="商品搜索"
+         android:textColor="@color/common_white"
+         android:textSize="23sp" />
+
+
+   </RelativeLayout>
+
+   <RelativeLayout
+      android:id="@+id/shop_rl_search"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="@color/cm_white">
+
+      <EditText
+         android:id="@+id/home_et_search"
+         style="@style/home_et_search"
+         android:layout_margin="8dp"
+         android:layout_centerInParent="true"
+         android:background="@drawable/shop_et_search"
+         android:gravity="center"
+         android:hint="亲，请搜索商品名称或商家名称" />
+
+      <ImageView
+         android:id="@+id/btn_search"
+         android:layout_width="60dp"
+         android:layout_height="60dp"
+         android:layout_marginLeft="10dp"
+         android:layout_alignParentRight="true"
+         android:paddingRight="10dp"
+         android:scaleType="centerInside"
+         android:src="@drawable/home_top_search" />
+   </RelativeLayout>
+
+   <View style="@style/cm_line_horizontal" />
+
+   <RadioGroup
+      android:id="@+id/shop_rg"
+      android:layout_width="match_parent"
+      android:layout_height="45dp"
+      android:layout_below="@+id/rl_banner"
+      android:layout_gravity="center_horizontal"
+      android:orientation="horizontal">
+
+      <RadioButton
+         android:id="@+id/part_rb_tab1"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_weight="1"
+         android:background="@drawable/part_tab_1"
+         android:button="@null"
+         android:checked="true"
+         android:gravity="center"
+         android:text="默认排序"
+         android:textColor="@drawable/shop_tv_tab"
+         android:textSize="@dimen/tv_size_body2" />
+
+      <RadioButton
+         android:id="@+id/part_rb_tab2"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_weight="1"
+         android:background="@drawable/part_tab_1"
+         android:button="@null"
+         android:drawableLeft="@drawable/parts_iv_line"
+         android:drawableRight="@drawable/parts_iv_line"
+         android:gravity="center"
+         android:text="价格排序"
+         android:textColor="@drawable/shop_tv_tab"
+         android:textSize="@dimen/tv_size_body2" />
+
+      <RadioButton
+         android:id="@+id/part_rb_tab3"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_weight="1"
+         android:background="@drawable/part_tab_1"
+         android:button="@null"
+         android:gravity="center"
+         android:text="销量排序"
+         android:textColor="@drawable/shop_tv_tab"
+         android:textSize="@dimen/tv_size_body2" />
+   </RadioGroup>
+
+   <com.ab.view.pullview.AbPullToRefreshView
+      android:id="@+id/refresh_layout"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_marginTop="10dp"
+      android:background="@color/cm_white"
+      android:orientation="vertical">
+
+      <ListView
+         android:id="@+id/shop_grid"
+         style="@style/cm_list_view"
+         android:dividerHeight="0dp" />
+   </com.ab.view.pullview.AbPullToRefreshView>
+</LinearLayout>

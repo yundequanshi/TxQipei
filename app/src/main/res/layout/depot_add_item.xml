@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/accident_add_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+ <TextView
+     	android:id="@+id/part_name"
+         android:layout_width="wrap_content"
+         android:layout_height="50dp"
+         android:text="配件1"
+         android:textColor="@color/common_black"
+         android:gravity="center"
+         android:textSize="17sp"
+         android:layout_centerVertical="true"
+         />
+ 
+  <TextView
+      android:id="@+id/part_num"
+         android:layout_width="wrap_content"
+         android:layout_height="50dp"
+         android:text="X5"
+         android:textColor="#FF632D"
+         android:layout_alignParentRight="true"
+         android:gravity="center"
+         android:layout_centerVertical="true"
+         />
+</RelativeLayout>

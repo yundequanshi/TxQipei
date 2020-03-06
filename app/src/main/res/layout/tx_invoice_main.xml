@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:orientation="vertical">
+
+   <RelativeLayout
+      android:id="@+id/topbar"
+      style="@style/topbar_layout">
+
+      <ImageButton
+         android:id="@+id/top_btn_left"
+         style="@style/topbar_btn_left"
+         android:src="@drawable/qp_cm_btn_back" />
+
+      <TextView
+         android:id="@+id/top_tv_title"
+         style="@style/topbar_title"
+         android:layout_centerInParent="true"
+         android:text="上传发货单" />
+
+      <ImageButton
+         android:id="@+id/top_btn_right"
+         android:layout_width="50dp"
+         android:layout_height="match_parent"
+         android:layout_alignParentRight="true"
+         android:background="@null"
+         android:src="@drawable/nav_baocun" />
+   </RelativeLayout>
+
+   <RelativeLayout
+      android:id="@+id/tab2_rl_top"
+      android:layout_width="match_parent"
+      android:layout_height="45dp"
+      android:background="@android:color/white">
+
+      <RadioGroup
+         android:id="@+id/detail_rg"
+         android:layout_width="match_parent"
+         android:layout_height="45dp"
+         android:layout_gravity="center_horizontal"
+         android:orientation="horizontal">
+
+         <RadioButton
+            android:id="@+id/detail_rb_tab1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/tab2_tv_nav"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="上传发货单"
+            android:textColor="@drawable/interact_tv_color" />
+         <!--            android:textColor="@drawable/interact_tv_color"-->
+
+         <RadioButton
+            android:id="@+id/detail_rb_tab2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/tab2_tv_nav"
+            android:button="@null"
+            android:gravity="center"
+            android:text="我的发货记录"
+            android:textColor="@drawable/interact_tv_color" />
+
+
+      </RadioGroup>
+
+      <View
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:layout_below="@id/interact_rg"
+         android:background="@color/cm_divider" />
+
+
+   </RelativeLayout>
+
+   <FrameLayout
+      android:id="@+id/detail_fl_content"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/tab2_rl_top" />
+</LinearLayout>

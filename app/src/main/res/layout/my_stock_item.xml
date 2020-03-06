@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+     android:padding="10dp"
+    >
+    
+      <ImageView
+        android:id="@+id/stock_iv_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/my_stock"
+        android:layout_centerVertical="true"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        />
+
+      <TextView
+        android:id="@+id/stock_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进货名称进货名称"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@id/stock_iv_icon"
+        android:textSize="14sp" 
+        android:paddingTop="5dp"/>
+      
+        <TextView
+        android:id="@+id/stock_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2014-05-12"
+        android:textColor="@android:color/darker_gray"
+        android:layout_alignParentRight="true"
+        android:gravity="right|center_vertical"
+        android:layout_alignTop="@id/stock_tv_name"
+        android:layout_toRightOf="@id/stock_tv_name"
+        android:paddingTop="5dp"
+        android:textSize="14sp" />
+        
+          <TextView
+       
+         android:id="@+id/stock_tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="电话:1302525244"
+        android:layout_below="@id/stock_tv_name"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@id/stock_tv_name"
+        android:paddingTop="5dp"
+        android:textSize="14sp" />
+      
+      <!--     <TextView
+       
+         android:id="@+id/stock_tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="数量:12"
+        android:layout_below="@id/stock_tv_name"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@id/stock_tv_name"
+        android:textSize="18sp" />
+          
+         <TextView
+         android:id="@+id/stock_tv_repertory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="库存:12"
+        android:layout_below="@id/stock_tv_count"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@id/stock_tv_name"
+        android:textSize="18sp" />   
+          
+         <TextView
+        android:id="@+id/stock_tv_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentRight="true"
+        android:text="39元"
+        android:layout_below="@id/stock_tv_name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />  
+        <TextView
+        android:id="@+id/stock_tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentRight="true"
+        android:text="39元"
+        android:layout_below="@id/stock_tv_count"
+        android:textColor="@color/common_orange"
+        android:textSize="20sp" />   -->
+</RelativeLayout>

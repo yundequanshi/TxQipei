@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cm_bg_layout"
+    >
+
+
+    <!-- 标题 -->
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/common_blue"
+        >
+        <ImageView
+            android:id="@+id/home_top_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/common_back"
+            android:scaleType="centerInside"
+            android:paddingRight="20dp"
+            />
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品评价"
+            android:layout_centerInParent="true"
+            android:textColor="@color/common_white"
+            android:textSize="23sp"
+            />
+
+
+    </RelativeLayout>
+
+    <com.ab.view.pullview.AbPullToRefreshView
+        android:id="@+id/tx_shop_pj_pullview"
+        android:layout_below="@+id/shopcar_ln_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/tx_shop_pj_lv"
+            style="@style/common_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cm_bg_layout"
+            android:divider="@drawable/cm_divider"
+            android:dividerHeight="1dp"
+            android:scrollbars="none"
+/>
+    </com.ab.view.pullview.AbPullToRefreshView>
+
+</LinearLayout>

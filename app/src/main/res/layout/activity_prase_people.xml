@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:background="@color/cm_bg_layout"
+   android:fitsSystemWindows="true"
+   android:orientation="vertical"
+   tools:context="com.qipei.interact.ParsePeopleActivity">
+
+   <RelativeLayout
+      android:id="@+id/topbar"
+      style="@style/topbar_layout">
+
+      <ImageButton
+         android:id="@+id/top_btn_left"
+         style="@style/topbar_btn_left"
+         android:onClick="back"
+         android:src="@drawable/common_back" />
+
+      <TextView
+         android:id="@+id/tv_title"
+         style="@style/topbar_title"
+         android:layout_centerInParent="true"
+         android:text="人觉得很赞"
+         android:textColor="@color/white" />
+   </RelativeLayout>
+
+   <ListView
+      android:id="@+id/lv_parse_people"
+      style="@style/cm_list_view"
+      android:background="@color/cm_white"
+      android:dividerHeight="0dp" />
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="@color/common_white"
+    >
+     <!-- 标题 -->
+<RelativeLayout
+    android:id="@+id/top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@color/common_blue"
+    >
+    <TextView
+        android:id="@+id/top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="汽配商城"
+        android:layout_centerInParent="true"
+        android:textColor="@color/common_white"
+        android:textSize="23sp"
+        />
+</RelativeLayout>
+
+<!-- 查询城市 -->
+<RelativeLayout
+    android:id="@+id/violation_ly_city"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_marginTop="15dp"
+    >
+    
+    <TextView
+        android:id="@+id/violation_tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/common_text_small"
+        android:text="查询城市"
+        android:layout_centerVertical="true"
+        />
+    <EditText
+        android:id="@+id/violation_et_city"
+        style="@style/common_et_user"
+        android:layout_alignParentRight="true"
+        android:hint="选择城市查询"
+        android:layout_toRightOf="@id/violation_tv_city"
+        android:layout_alignTop="@id/violation_tv_city"
+        android:layout_marginLeft="60dp"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_divider"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
+
+
+<!-- 车牌号码 -->
+<RelativeLayout
+    android:id="@+id/violation_ly_plate"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_marginTop="15dp"
+    >
+    
+    <TextView
+        android:id="@+id/violation_tv_plate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/common_text_small"
+        android:text="车牌号码"
+        android:layout_centerVertical="true"
+        />
+    <EditText
+        android:id="@+id/violation_et_plate"
+        style="@style/common_et_user"
+        android:layout_alignParentRight="true"
+        android:hint="请输入车牌号码"
+        android:layout_toRightOf="@id/violation_tv_plate"
+        android:layout_alignTop="@id/violation_tv_plate"
+        android:layout_marginLeft="60dp"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        />
+     <ImageButton
+        android:id="@+id/violation_ib_plate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/violation_plate"
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="4dp"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_divider"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
+
+<!-- 发动机号 -->
+<RelativeLayout
+    android:id="@+id/violation_ly_motor"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_marginTop="15dp"
+    >
+    
+    <TextView
+        android:id="@+id/violation_tv_motor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/common_text_small"
+        android:text="发动机号"
+        android:layout_centerVertical="true"
+        />
+    <EditText
+        android:id="@+id/violation_et_motor"
+        style="@style/common_et_user"
+        android:layout_alignParentRight="true"
+        android:hint="请输入发动机号"
+        android:layout_toRightOf="@id/violation_tv_motor"
+        android:layout_alignTop="@id/violation_tv_motor"
+        android:layout_marginLeft="60dp"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        />
+</RelativeLayout>
+
+<Button
+         android:id="@+id/violation_btn"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:layout_marginTop="20dp"
+         android:layout_marginLeft="10dp"
+    	 android:layout_marginRight="10dp"
+    	 android:background="@drawable/login_btn"
+    	 android:text="查询"
+    	 android:gravity="center"
+    	 android:textColor="@color/common_white"
+    	 android:textSize="18sp"
+         />  
+</LinearLayout>

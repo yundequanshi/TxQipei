@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/accident_rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white" >
+
+    <!-- 标题 -->
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/common_blue"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/top_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/common_back" />
+
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发布消息"
+            android:textColor="@color/common_white"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_bar"
+        android:focusable="true"
+        android:orientation="vertical" 
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/accident_iv_step"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_bar"
+            android:background="@null"
+            android:scaleType="fitStart"
+            android:src="@drawable/advan_add_step3"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/accident_et_content"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="top|left"
+            android:hint="您可以在这里输入描述..." />
+
+        <Button
+            android:id="@+id/accident_btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_btn"
+            android:text="马上发布"
+            android:textColor="@color/common_white"
+            android:textSize="18sp" 
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</RelativeLayout>

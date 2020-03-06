@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="6dp"
+    android:paddingLeft="6dp" >
+
+    <ImageView
+        android:id="@+id/accident_iv_icon"
+        android:layout_centerVertical="true"
+        android:layout_width="100dp"
+        android:layout_height="90dp	" />
+
+    <LinearLayout
+        android:id="@+id/ll_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/accident_iv_icon"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <TextView
+            android:id="@+id/accident_tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="top"
+            android:text="已售"
+            android:background="#d90808"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/tv_size_body3" />
+
+
+
+        <TextView
+            android:id="@+id/accident_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:contentDescription="黑豹 旅行家 1.6L 手动"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/tv_size_subhead" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/accident_tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="10公里 | 山东   2014年8月16日"
+            android:textColor="@color/common_darker_gray"
+            android:textSize="@dimen/tv_size_body2" />
+
+        <TextView
+            android:id="@+id/accident_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="2015-06-09"
+            android:textColor="@color/common_darker_gray"
+            android:textSize="@dimen/tv_size_body2" />
+
+        <TextView
+            android:id="@+id/accident_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_below="@id/accident_tv_time"
+            android:layout_marginRight="10dp"
+            android:text="￥ 7000万元"
+            android:textSize="@dimen/tv_size_subhead" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/accident_tv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ll_info"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+
+    <ImageButton
+        android:id="@+id/accident_ib_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:visibility="gone"
+        android:src="@drawable/shanchuanniu" />
+
+    <ImageButton
+        android:id="@+id/accident_ib_sell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:visibility="gone"
+        android:layout_toLeftOf="@id/accident_ib_del"
+        android:src="@drawable/shou" />
+</RelativeLayout>

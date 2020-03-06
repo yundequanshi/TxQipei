@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/cm_bg_layout"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        style="@style/topbar_layout">
+
+        <ImageButton
+            android:id="@+id/top_btn_left"
+            style="@style/topbar_btn_left"
+            android:src="@drawable/qp_cm_btn_back" />
+
+        <TextView
+            android:id="@+id/top_tv_title"
+            style="@style/topbar_title"
+            android:layout_centerInParent="true"
+            android:text="个人中心" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cm_side_w"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                style="@style/person_tv_label"
+                android:text="头像:"
+                android:drawableLeft="@drawable/touxiang"
+                android:layout_height="70dp"
+                />
+            <View style="@style/cm_divider"/>
+
+            <TextView
+                style="@style/person_tv_label"
+                android:text="姓名:"
+                android:drawableLeft="@drawable/xingmimg"
+                />
+            <View style="@style/cm_divider"/>
+
+            <TextView
+                style="@style/person_tv_label"
+                android:text="手机号:"
+                android:drawableLeft="@drawable/shoujihao"
+                />
+            <View style="@style/cm_divider"/>
+
+            <TextView
+                style="@style/person_tv_label"
+                android:text="业务电话:"
+                android:drawableLeft="@drawable/yewudianhua"
+                />
+            <View style="@style/cm_divider"/>
+
+            <TextView
+                style="@style/person_tv_label"
+                android:text="地区:"
+                android:drawableLeft="@drawable/dizhi"
+                />
+            <View style="@style/cm_divider"/>
+
+            <TextView
+                style="@style/person_tv_label"
+                android:text="详细地址:"
+                android:drawableLeft="@drawable/xiangxidizhi"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="right"
+            >
+            <!--android:src="@drawable/test3"-->
+            <cn.ml.base.widget.roundedimageview.RoundedImageView
+                android:id="@+id/me_iv_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                app:riv_border_color="@color/cm_head_side"
+                app:riv_border_width="2dp"
+                app:riv_corner_radius="30dp"
+                app:riv_oval="true" />
+
+            <EditText
+                style="@style/person_et_content"
+                android:contentDescription="姓名"
+                android:id="@+id/my_tv_name"
+                android:maxLength="10"
+                />
+
+            <EditText
+                style="@style/person_et_content"
+                android:contentDescription="手机号"
+                android:id="@+id/my_tv_phone"
+                android:maxLength="12"
+                />
+            <EditText
+                style="@style/person_et_content"
+                android:contentDescription="业务电话"
+                android:id="@+id/my_tv_mobile"
+                android:maxLength="12"
+                />
+
+            <TextView
+                style="@style/person_tv_content"
+                android:contentDescription="地区"
+                android:id="@+id/my_tv_province"
+                />
+
+            <EditText
+                style="@style/person_et_content"
+                android:contentDescription="详细地址"
+                android:id="@+id/my_tv_address"
+                android:maxLength="15"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/accident_btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/tv_size_body2"
+        android:text="提 交"
+        android:background="@drawable/cm_btn_blue"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+</LinearLayout>

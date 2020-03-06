@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/root"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:background="@color/cm_bg_layout">
+
+   <TextView
+      android:id="@+id/tv_explain"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:textColor="@color/common_orange"
+      android:textSize="16sp"
+      android:visibility="gone" />
+
+   <com.ab.view.pullview.AbPullToRefreshView
+      android:id="@+id/refressview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="15dp"
+      android:layout_below="@id/tv_explain"
+      android:background="@color/common_white"
+      android:orientation="vertical">
+
+      <ListView
+         android:id="@+id/home_lv_business"
+         style="@style/common_list"
+         android:layout_height="match_parent"
+         android:layout_marginLeft="8dp"
+         android:layout_marginRight="8dp"
+         android:background="@color/common_white"
+         android:divider="@drawable/cm_divider" />
+   </com.ab.view.pullview.AbPullToRefreshView>
+</RelativeLayout>

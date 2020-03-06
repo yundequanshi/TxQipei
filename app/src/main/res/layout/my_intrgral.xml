@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/money_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6" >
+
+    <!-- 标题 -->
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/common_blue" >
+
+        <ImageView
+            android:id="@+id/money_top_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/common_back" />
+
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="签到"
+            android:textColor="@color/common_white"
+            android:textSize="23sp" />
+
+        <Button
+            android:id="@+id/money_btn_guize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:padding="5dp"
+            android:text="历史积分"
+            android:textColor="@color/common_white"
+            android:textSize="19sp" />
+    </RelativeLayout>
+    <!-- 头部 -->
+
+    <RelativeLayout
+        android:id="@+id/money_rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/top_bar" >
+
+        <ImageView
+            android:id="@+id/money_iv_head"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <com.zuomei.widget.MLCircleImageView
+            android:id="@+id/my_iv_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" 
+         android:src="@drawable/default_my_info_head" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/common_text_small"
+            android:layout_alignTop="@id/my_iv_head"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/my_iv_head"
+            android:contentDescription="济南宝鑫伟业汽配" />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/my_iv_head"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/my_iv_head"
+            android:contentDescription="积分:   1524分"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/case_ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/money_rl_head"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/cm_font_blue1"
+            >
+
+            <Button
+                android:id="@+id/btn_sign"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:background="@color/cm_font_blue1"
+                android:text="签 到"
+                android:textSize="19sp"
+                android:textColor="@color/common_white"
+                 />
+
+            <View
+                android:id="@+id/intrgral_driver"
+                android:layout_width="0.8dp"
+                android:layout_height="30dp"
+                android:background="#56b5ff"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/btn_sign"
+                />
+
+            <TextView
+                android:id="@+id/tv_sm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/intrgral_driver"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="赚积分"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/wrap_noall"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp" >
+
+            <LinearLayout
+                android:id="@+id/btn_award"
+                style="@style/wrap_noall"
+                android:layout_marginRight="0.4dp"
+                android:layout_weight="1"
+                android:background="@color/white" >
+
+                <LinearLayout
+                    style="@style/wrap_all"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/wrap_all"
+                        android:text="刮刮乐" />
+
+                    <TextView
+                        style="@style/wrap_all"
+                        android:text="精彩福利送不停"
+                        android:textColor="@color/index_tx_color"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/wrap_noall"
+                    android:padding="8dp"
+                    android:src="@drawable/guagualetubiaoan" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/intrgral_ll_shop"
+                style="@style/wrap_noall"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0.4dp"
+                android:layout_weight="1"
+                android:background="@color/white" >
+
+                <LinearLayout
+                    style="@style/wrap_all"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/wrap_all"
+                        android:text="积分商城" />
+
+                    <TextView
+                        style="@style/wrap_all"
+                        android:text="积分当“钱”花"
+                        android:textColor="@color/index_tx_color"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/wrap_noall"
+                    android:layout_gravity="bottom|right"
+                    android:padding="8dp"
+                    android:src="@drawable/jifenshangcheng1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/web"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+    </LinearLayout>
+
+</RelativeLayout>

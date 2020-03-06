@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.txsh"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 11
+        versionName "17"
+        multiDexEnabled true
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // .. android settings ..
+    sourceSets.main {
+        jniLibs.srcDirs = ['libs']  // <-- Set your folder here!
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:support-v4:22.2.1'
+    compile files('libs/async.jar')
+    compile files('libs/alipaySDK-20150610.jar')
+    compile files('libs/andbase.jar')
+    compile files('libs/httpmime-4.1.1.jar')
+    compile files('libs/yunzhixun_video_SDK_ver_1.1.10.jar')
+    compile project(':HxModule')
+    compile project(':ShareSdk')
+    compile(name: 'FitPopupwindow', ext: 'aar')
+    compile(name: 'alterview', ext: 'aar')
+    compile 'com.github.orangegangsters:swipy:1.2.3@aar'
+    compile files('libs/jpush-android-2.1.7.jar')
+    compile project(':galleryfinal')
+    compile 'com.tencent.bugly:crashreport:latest.release' //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
+    compile 'com.tencent.bugly:nativecrashreport:latest.release' //其中latest.release指代最新Bugly NDK版本号，也可以指定明
+}
+//签名密码 rfr454545

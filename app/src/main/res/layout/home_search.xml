@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/cm_bg_layout"
+    >
+ <!-- 标题 -->
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_layout">
+
+        <ImageButton
+            android:id="@+id/top_back"
+            style="@style/topbar_btn_left"
+            android:src="@drawable/qp_cm_btn_back" />
+
+        <TextView
+            android:id="@+id/top_tv_title"
+            style="@style/topbar_title"
+            android:layout_centerInParent="true"
+            android:text="搜索" />
+    </RelativeLayout>
+
+ <RelativeLayout
+       android:id="@+id/home_ly_business"
+       android:layout_width="match_parent"
+       android:layout_height="55dp"
+       android:background="@color/login_gray"
+       android:layout_below="@+id/top_bar"
+       >
+      <EditText
+          android:id="@+id/home_et_search"
+          style="@style/home_et_search"
+          android:layout_margin="8dp"
+          android:hint="亲，请搜索商家名称或类别名称"
+          android:background="@drawable/home_et_search"
+          android:layout_centerInParent="true"
+          />
+   	   
+	 <ImageView
+        android:id="@+id/btn_search"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/home_top_search"
+        android:scaleType="centerInside"
+        android:paddingRight="10dp"
+        />
+</RelativeLayout>
+  <com.ab.view.pullview.AbPullToRefreshView
+      android:id="@+id/_refressview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:layout_below="@id/home_ly_business"
+      android:layout_marginTop="8dp"
+      android:layout_marginLeft="8dp"
+      android:layout_marginRight="8dp"
+    android:orientation="vertical" >
+ 	<ListView
+        android:id="@+id/home_lv_business"
+		style="@style/common_list"      
+		android:background="@color/common_white"
+        android:divider="@color/cm_bg_layout"
+        android:dividerHeight="8dp"
+        /></com.ab.view.pullview.AbPullToRefreshView>
+</RelativeLayout>

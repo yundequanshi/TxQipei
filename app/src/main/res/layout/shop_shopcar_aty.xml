@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cm_bg_layout"
+    android:orientation="vertical">
+
+    <!-- 标题 -->
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/common_blue"
+        >
+        <ImageView
+            android:id="@+id/home_top_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/common_back"
+            android:scaleType="centerInside"
+            android:paddingRight="20dp"
+            />
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购物车"
+            android:layout_centerInParent="true"
+            android:textColor="@color/common_white"
+            android:textSize="23sp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/shopcar_ln_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/top_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/cm_bg_layout"
+        android:padding="6dp">
+
+        <CheckBox
+            android:id="@+id/shopcar_rb_all"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:clickable="false"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/shopcar_rido_back"
+            android:button="@null"
+            android:textColor="@color/tv_black2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="所有商品"
+
+            android:textColor="@color/tv_black1"
+            android:textSize="@dimen/tv_size_body2" />
+    </LinearLayout>
+
+    <com.ab.view.pullview.AbPullToRefreshView
+        android:id="@+id/shopcar_pullview"
+        android:layout_below="@+id/shopcar_ln_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/shopcar_lv_shop"
+            style="@style/common_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:background="@android:color/white"
+            android:divider="#f0f0f0"
+            android:dividerHeight="1dp"
+            android:scrollbars="none"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp" />
+    </com.ab.view.pullview.AbPullToRefreshView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cm_bg_layout"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:id="@+id/shopcar_ln_num"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp">
+
+            <TextView
+                android:id="@+id/shopcar_tv_Total"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:text="合计："
+                android:layout_marginLeft="6dp"
+                android:textColor="@color/tv_black1"
+                android:textSize="@dimen/tv_size_body2" />
+
+            <TextView
+                android:id="@+id/shopcar_tv_TotalNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/shopcar_tv_Total"
+                android:gravity="center"
+                android:text="0.00"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/red"
+                android:textSize="@dimen/tv_size_title" />
+
+            <TextView
+                android:id="@+id/shopcar_tv_Totalunit"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@+id/shopcar_tv_TotalNum"
+                android:gravity="center_vertical"
+                android:text="元"
+                android:textColor="@color/tv_black1"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/shopcar_ln_numm"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/shopcar_ln_num"
+            >
+            <Button
+                android:id="@+id/shopcar_btn_dele"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/cm_btn_gray"
+                android:scaleType="fitCenter"
+                android:text="删 除"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/tv_size_subhead" />
+            <!--android:src="@drawable/shopcar_btn_deleback"-->
+            <Button
+                android:id="@+id/shopcar_btn_set"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/product_btn_add"
+                android:layout_weight="1"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/cm_btn_apply"
+                android:scaleType="fitCenter"
+                android:text="结 算"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/tv_size_subhead"
+                />
+        </LinearLayout>
+        <!--android:src="@drawable/shopcar_btn_settback"-->
+
+    </LinearLayout>
+
+</RelativeLayout>

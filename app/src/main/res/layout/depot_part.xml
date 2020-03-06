@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ml="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/accident_add_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="@color/common_white"
+    >
+ <!-- 标题 -->
+<RelativeLayout
+    android:id="@+id/top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@color/common_blue"
+    >
+    <ImageView
+        android:id="@+id/top_back"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/common_back"
+        android:scaleType="centerInside"
+        android:paddingRight="20dp"
+        />
+    <TextView
+        android:id="@+id/top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="配件信息"
+        android:layout_centerInParent="true"
+        android:textColor="@color/common_white"
+        android:textSize="23sp"
+        />
+     <Button
+            android:id="@+id/btn_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:padding="5dp"
+            android:text="提交"
+            android:textColor="@color/common_white"
+            android:textSize="19sp" />
+</RelativeLayout>
+<ScrollView 
+         android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+    <LinearLayout 
+           android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+        >
+<com.zuomei.widget.MLLineLayout 
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		ml:text="名   称:"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+>
+     <EditText
+         android:id="@+id/et_name"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+         android:hint="请输入汽修厂名称"
+         android:layout_marginLeft="90dp"
+         android:textColor="@android:color/black"
+         android:layout_centerVertical="true"
+         android:background="@null"
+         android:singleLine="true"
+         android:maxLength="15"
+         android:gravity="center_vertical"
+         />
+     
+ </com.zuomei.widget.MLLineLayout>
+
+<com.zuomei.widget.MLLineLayout 
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		ml:text="电话:"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:visibility="gone"
+>
+     <EditText
+         android:id="@+id/et_phone"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+         android:hint="请输入汽修厂电话"
+          android:layout_marginLeft="90dp"
+         android:textColor="@android:color/black"
+         android:layout_centerVertical="true"
+         android:background="@null"
+         android:singleLine="true"
+         android:inputType="number"
+         android:maxLength="12"
+         android:gravity="center_vertical"
+         />
+     
+ </com.zuomei.widget.MLLineLayout>
+
+<com.zuomei.widget.MLLineLayout 
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		ml:text="车    型:"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+>
+     <TextView
+         android:id="@+id/et_cartype"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="请选择车型"
+         android:textSize="18sp"
+           android:layout_marginLeft="90dp"
+         android:textColor="@android:color/black"
+         android:layout_centerVertical="true"
+         android:singleLine="true"
+         android:gravity="center_vertical"
+         android:drawableRight="@drawable/my_arrows_right"
+         />
+     
+ </com.zuomei.widget.MLLineLayout>
+
+<com.zuomei.widget.MLLineLayout 
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		ml:text="子车型:"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+>
+     <EditText
+         android:id="@+id/et_carchild"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+         android:hint="请输入子车型"
+            android:layout_marginLeft="90dp"
+         android:textColor="@android:color/black"
+         android:layout_centerVertical="true"
+         android:background="@null"
+         android:singleLine="true"
+         android:maxLength="15"
+         android:gravity="center_vertical"
+         />
+     
+ </com.zuomei.widget.MLLineLayout>
+ 
+
+<com.zuomei.widget.MLLineLayout 
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		ml:text="车架号:"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+>
+     <EditText
+         android:id="@+id/et_chejia"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+         android:hint="请输入车架号"
+            android:layout_marginLeft="90dp"
+         android:textColor="@android:color/black"
+         android:layout_centerVertical="true"
+         android:background="@null"
+         android:singleLine="true"
+         android:maxLength="20"
+         android:gravity="center_vertical"
+         />
+ </com.zuomei.widget.MLLineLayout>
+ 
+<com.zuomei.widget.MLLineLayout 
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		ml:text="年   份:"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+>
+     <EditText
+         android:id="@+id/et_year"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+         android:hint="请输入年份"
+            android:layout_marginLeft="90dp"
+         android:textColor="@android:color/black"
+         android:layout_centerVertical="true"
+         android:background="@null"
+         android:singleLine="true"
+         android:inputType="number"
+          android:maxLength="4"
+         android:gravity="center_vertical"
+         />
+     
+ </com.zuomei.widget.MLLineLayout>
+ 
+<!-- <com.zuomei.widget.MLLineLayout 
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		ml:text="备注:"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginTop="10dp"
+>
+     <EditText
+         android:id="@+id/et_content"
+         android:layout_width="match_parent"
+         android:layout_height="120dp"
+         android:hint="请输入备注"
+         android:textColor="@color/common_darker_gray"
+         android:layout_centerVertical="true"
+         android:gravity="center_vertical"
+         />
+     
+ </com.zuomei.widget.MLLineLayout>  
+  -->
+  
+     <EditText
+         android:id="@+id/et_content"
+         android:layout_width="match_parent"
+         android:layout_height="80dp"
+         android:hint="请填写配件备注..."
+         android:textColor="@android:color/background_dark"
+         android:layout_centerVertical="true"
+         android:gravity="left|top"
+         android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginTop="10dp"
+		android:maxLength="50"
+         />
+  
+ <TextView
+         android:layout_width="match_parent"
+         android:layout_height="30dp"
+         android:text="配件单"
+         android:textColor="@color/common_white"
+         android:gravity="center"
+         android:background="#C1C1BF"
+         android:layout_marginTop="13dp"
+         />
+ 
+ 
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="70dp"
+     >
+     
+     
+          <EditText
+         android:id="@+id/et_part_name"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+         android:hint="请输入配件名称"
+         android:layout_centerVertical="true"
+         android:textColor="@android:color/black"
+         android:layout_marginLeft="20dp"
+         android:singleLine="true"
+             android:textSize="15sp"
+                  android:maxLength="15"
+         android:gravity="center_vertical"
+         />
+     
+          
+          <Button
+         android:id="@+id/btn_add"
+         android:layout_width="70dp"
+         android:layout_height="35dp"
+    	 android:layout_marginRight="8dp"
+    	 android:background="@drawable/login_btn"
+    	 android:text="添加"
+    	 android:layout_alignParentRight="true"
+    	 android:layout_centerVertical="true"
+    	 android:gravity="center"
+    	 android:textColor="@color/common_white"
+    	 android:textSize="18sp"
+         />  
+          
+                    <EditText
+         android:id="@+id/et_part_num"
+         android:layout_width="60dp"
+         android:layout_height="wrap_content"
+         android:text="1"
+         android:textSize="15sp"
+         android:inputType="number"
+         android:layout_toLeftOf="@id/btn_add"
+         android:textColor="@android:color/black"
+         android:layout_marginRight="10dp"
+         android:singleLine="true"
+          android:layout_centerVertical="true"
+         android:gravity="center"
+         android:maxLength="4"
+         />
+          
+          <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="X"
+         android:layout_toLeftOf="@id/et_part_num"
+         android:textColor="#FF632D"
+         android:gravity="center"
+         android:layout_centerVertical="true"
+         android:layout_marginRight="3dp"
+         android:layout_marginBottom="5dp"
+         />
+     <View
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:background="@drawable/common_divider"
+         android:layout_alignParentBottom="true"
+         />
+ </RelativeLayout>
+ 
+<ListView
+        android:id="@+id/mListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+		style="@style/common_list"  
+        />
+ 
+         </LinearLayout>
+    
+</ScrollView>
+</LinearLayout>

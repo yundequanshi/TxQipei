@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/accident_add_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="3dp">
+ <TextView
+     	android:id="@+id/part_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="驾驶室铰接支架"
+         android:textColor="@color/common_black"
+         android:gravity="center"
+         android:textSize="17sp"
+         />
+ 
+     <TextView
+     	android:id="@+id/part_count"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="X6"
+         android:textColor="@color/common_orange"
+         android:gravity="center"
+         android:textSize="18sp"
+         android:layout_alignParentRight="true"
+         android:layout_alignBottom="@id/part_name"
+         />
+ 
+   <LinearLayout
+     android:id="@+id/price_ll"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+       android:layout_below="@id/part_name"
+              android:layout_marginTop="2dp"
+     >
+       <TextView
+     	android:id="@+id/part_price1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:text="正厂价格:220元 "
+         android:textColor="@color/common_darker_gray"
+     android:gravity="left|center"
+         android:singleLine="true"
+         android:textSize="15sp"
+         />
+  
+  <TextView
+     	android:id="@+id/part_price2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:text="副厂价格200元"
+         android:textColor="@color/common_darker_gray"
+     android:gravity="left|center"
+         android:singleLine="true"
+         android:textSize="15sp"
+         />
+  
+ </LinearLayout>
+  <LinearLayout
+      android:id="@+id/ll_remark"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+	android:background="#F8F8F8"
+      android:layout_below="@id/price_ll"
+      android:padding="6dp"
+      android:orientation="vertical"
+      
+      >
+        <TextView
+     	android:id="@+id/part_remark"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="dsfsdfdslkfjdsk的快乐是放假了可是对方了肯定说减肥快乐的手机放开了大姐夫"
+         android:textColor="#c42b20"
+         android:textSize="16sp"
+         />
+      
+  </LinearLayout>
+</RelativeLayout>

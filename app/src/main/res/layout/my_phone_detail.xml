@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dedede"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        style="@style/topbar_layout" >
+
+        <ImageButton
+            android:id="@+id/top_back"
+            style="@style/topbar_btn_left"
+            android:src="@drawable/qp_cm_btn_back" />
+
+        <TextView
+            android:id="@+id/top_tv_title"
+            style="@style/topbar_title"
+            android:layout_centerInParent="true"
+            android:text="通话详情" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/head_layouy"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/topbar"
+        android:background="#dedede" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#eaeaea" />
+
+        <ImageView
+            android:id="@+id/head_phone"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/default_my_info_head" />
+
+        <TextView
+            android:id="@+id/head_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/head_phone"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:text="小李"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <com.ab.view.pullview.AbPullToRefreshView
+        android:id="@+id/phone_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/head_layouy"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/mListView"
+            style="@style/common_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             />
+    </com.ab.view.pullview.AbPullToRefreshView>
+
+</RelativeLayout>

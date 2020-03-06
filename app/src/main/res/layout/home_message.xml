@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="@color/common_white"
+    >
+     <!-- 标题 -->
+<RelativeLayout
+    android:id="@+id/top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@color/common_blue"
+    >
+    
+        <ImageView  
+        android:id="@+id/top_message"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/my_messgae"
+        android:background="@drawable/cm_btn_bg"
+        android:scaleType="centerInside"
+        android:paddingRight="20dp"
+        />
+                <ImageView
+        android:id="@+id/top_message_prompt"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:visibility="gone"
+        android:src="@drawable/home_message_bg"
+        android:layout_alignRight="@id/top_message"
+        />
+    
+    <TextView
+        android:id="@+id/top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="互动"
+        android:layout_centerInParent="true"
+        android:textColor="@color/common_white"
+        android:textSize="23sp"
+        />
+    <ImageButton
+        android:id="@+id/message_ib_add"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/message_add"
+        android:background="@drawable/cm_btn_bg"
+        android:scaleType="centerInside"
+		android:paddingRight="8dp"        
+        />
+</RelativeLayout>
+	<!-- 	style="@style/common_list"       -->
+<!-- <com.zuomei.widget.pulltorefresh.PullToRefreshListView
+        android:id="@+id/message_lv"
+			android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/common_divider"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" 
+		android:background="@color/common_white"
+		android:layout_marginTop="5dp"
+		android:layout_below="@id/top_bar"
+        /> -->
+        
+   <com.ab.view.pullview.AbPullToRefreshView
+      android:id="@+id/message_lv"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_white"
+    android:layout_below="@id/top_bar"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/mListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+		style="@style/common_list"  
+        />
+
+</com.ab.view.pullview.AbPullToRefreshView>
+  <RelativeLayout
+      android:id="@+id/message_rl_reply"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:visibility="gone"
+      android:background="@color/common_gray"
+      android:paddingTop="3dp"
+      android:paddingBottom="1dp"
+      android:paddingRight="1dp"
+      android:layout_alignParentBottom="true"
+      >
+     <Button
+          android:id="@+id/message_btn_reply"
+          android:layout_width="65dp"		
+          android:layout_height="35dp"
+          android:text="回复"
+          android:textColor="@color/common_white"
+          android:textSize="16sp"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:background="@drawable/message_btn_reply"
+          />
+      <EditText 
+          android:id="@+id/message_et_reply"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_centerVertical="true"
+          android:layout_toLeftOf="@id/message_btn_reply"
+          />
+     
+      
+  </RelativeLayout>
+</RelativeLayout>

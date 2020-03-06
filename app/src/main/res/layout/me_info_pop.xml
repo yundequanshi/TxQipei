@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent">
+
+   <LinearLayout
+      android:id="@+id/login_ly_status"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_centerInParent="true"
+      android:background="@color/common_white"
+      android:orientation="vertical">
+
+      <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:paddingTop="13dp"
+         android:paddingBottom="10dp"
+         android:paddingLeft="16dp"
+         android:paddingRight="16dp">
+
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入"
+            android:textColor="@color/common_blue"
+            android:textSize="@dimen/tv_size_subhead" />
+
+
+      </RelativeLayout>
+
+      <ImageView
+         android:layout_width="match_parent"
+         android:layout_height="2dp"
+         android:background="@drawable/common_dialog_divider" />
+
+      <ListView
+         android:id="@+id/lv_me_phone"
+         style="@style/cm_list_view"
+         android:dividerHeight="0dp" />
+
+   </LinearLayout>
+
+
+   <TextView
+      android:id="@+id/login_city_ok"
+      android:layout_width="match_parent"
+      android:layout_height="45dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_alignParentRight="true"
+      android:layout_below="@id/login_ly_status"
+      android:background="@drawable/cm_btn_blue"
+      android:gravity="center"
+      android:text="确定"
+      android:textColor="@color/common_white"
+      android:textSize="@dimen/tv_size_subhead" />
+
+   <ImageView
+      android:id="@+id/btn_close"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="15dp"
+      android:layout_alignRight="@id/login_ly_status"
+      android:layout_alignTop="@id/login_ly_status"
+      android:src="@drawable/xinxiguanbi" />
+</RelativeLayout>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white" >
+
+    <!-- 标题 -->
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/head_back_nomall" >
+
+        <ImageView
+            android:id="@+id/top_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/common_back" />
+
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="二手车详情"
+            android:textColor="@color/common_white"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/accident_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar"
+        android:layout_marginBottom="50dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/accident_tv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:padding="10dp"
+                        android:background="#f2f2f2"
+                        android:text=""
+                        android:textColor="@color/common_black"
+                        android:textSize="20sp" />
+
+                    <android.support.v4.view.ViewPager  
+                        android:id="@+id/horizon_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#ffffff" >
+                    </android.support.v4.view.ViewPager>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f2f2f2" />
+                    <!-- 发布时间 -->
+
+                    <TextView
+                        android:id="@+id/accident_tv_addtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:background="#ffffff"
+                        android:gravity="right"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingRight="10dp"
+                        android:text="发布时间"
+                        android:textColor="@color/common_darker_gray"
+                        android:textSize="14sp" />
+                    <!-- 行驶里程 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <!-- 价格 -->
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"
+                            android:background="#f2f2f2" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:orientation="horizontal"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp" >
+
+                            <TextView
+                                android:id="@+id/accident_tv_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:text=""
+                                android:textColor="@color/red"
+                                android:textSize="14sp"
+                               />
+
+                            <TextView
+                                android:id="@+id/accident_tv_oldprice"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:visibility="gone"
+                                android:text=""
+                                android:textColor="@color/common_darker_gray"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"
+                            android:background="#f2f2f2" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/accident_tv_mileage"
+                        android:background="@drawable/accident_price"
+                        android:visibility="gone" >
+
+                        <!-- android:background="@drawable/accident_price" -->
+
+
+                        <!-- 过户费用 -->
+
+                        <TextView
+                            android:id="@+id/accident_tv_transfer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="13dp"
+                            android:layout_marginTop="2dp"
+                            android:text="不含过户费"
+                            android:textColor="@color/common_black"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <!-- 首页幻灯 -->
+
+                <com.ab.view.sliding.AbSlidingPlayView
+                    android:id="@+id/accident_playView"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone" >
+                </com.ab.view.sliding.AbSlidingPlayView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/common_gray"
+                    android:gravity="left|center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="车辆信息"
+                    android:textColor="@color/common_black"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <!-- 车牌所在地 -->
+
+                    <TextView
+                        android:id="@+id/accident_tv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:paddingBottom="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="15dp"
+                        android:singleLine="true"
+                        android:text="车牌所在地"
+                        android:textColor="@color/common_darker_gray"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f2f2f2" />
+                    <!-- 排量 -->
+
+                    <TextView
+                        android:id="@+id/accident_tv_displacement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="15dp"
+                        android:text="排量:"
+                        android:textColor="@color/common_darker_gray"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f2f2f2" />
+
+                    <TextView
+                        android:id="@+id/accident_tv_mileage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="15dp"
+                        android:text="行驶里程10万"
+                        android:textColor="@color/common_darker_gray"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f2f2f2" />
+                    <!-- 受损部位 -->
+
+                    <TextView
+                        android:id="@+id/accident_tv_damaged"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:paddingBottom="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="15dp"
+                        android:singleLine="true"
+                        android:text="受损部位:"
+                        android:textColor="@color/common_darker_gray"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:visibility="gone"
+                        android:background="#f2f2f2" />
+                    <!-- 上牌日期 -->
+
+                    <TextView
+                        android:id="@+id/accident_tv_platedata"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="上牌日期:2014-6-10"
+                        android:textColor="@color/common_darker_gray"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="#f2f2f2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center"
+                            android:layout_marginLeft="10dp"
+                            android:paddingTop="15dp"
+                            android:text="车主描述：    "
+                            android:textColor="@color/common_darker_gray"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/accident_tv_detail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="15dp"
+                            android:paddingRight="10dp"
+                            android:contentDescription="这个问题是很普遍，不是说我使用问题或者是什么问题。因为这个就是说记忆丢失以后，所造成的这些功能都是出问题的，在网上你可以查一下以后，有很多很多用户都是这样的用户，也有这样像我这样的用户，升完级以后不能解决这个问题。刚好我这个是，因为我的车用得比较少，他出现这个问题已经出了保修期。"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                      <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="#f2f2f2" />
+                      <View
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/accident_tv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/head_back_nomall"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/yuyuekanche"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text=" 预约看车  "
+        android:textColor="@color/common_white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

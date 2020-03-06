@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:background="@color/common_bg"
+   android:fitsSystemWindows="true"
+   android:orientation="vertical"
+   tools:context="com.zuomei.home.ConvenienceActivity">
+
+   <RelativeLayout
+      android:id="@+id/topbar"
+      style="@style/topbar_layout"
+      android:background="@color/head_back_nomall">
+
+      <ImageButton
+         android:id="@+id/top_btn_left"
+         style="@style/topbar_btn_left"
+         android:onClick="back"
+         android:src="@drawable/common_back" />
+
+      <TextView
+         android:id="@+id/top_tv_title"
+         style="@style/topbar_title"
+         android:layout_centerInParent="true"
+         android:text="便民资讯"
+         android:textColor="@color/white" />
+   </RelativeLayout>
+
+   <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="360dp"
+      android:orientation="horizontal">
+
+      <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_weight="1"
+         android:orientation="vertical">
+
+         <LinearLayout
+            android:id="@+id/home_acciedent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/icon_illegal" />
+
+            <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="违章查询"
+               android:textColor="@color/tv_black1"
+               android:textSize="@dimen/tv_size_body2" />
+         </LinearLayout>
+
+         <View style="@style/cm_line_horizontal" />
+
+         <LinearLayout
+            android:id="@+id/home_btn_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/icon_navigation" />
+
+            <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="地图导航"
+               android:textColor="@color/tv_black1"
+               android:textSize="@dimen/tv_size_body2" />
+         </LinearLayout>
+
+         <View style="@style/cm_line_horizontal" />
+
+         <LinearLayout
+            android:id="@+id/ll_jifen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+               android:id="@+id/iv_jifen"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@mipmap/icon_store" />
+
+            <TextView
+               android:id="@+id/tv_jifen"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="积分商城"
+               android:textColor="@color/tv_black1"
+               android:textSize="@dimen/tv_size_body2" />
+         </LinearLayout>
+
+         <View style="@style/cm_line_horizontal" />
+      </LinearLayout>
+
+      <View style="@style/cm_line_vertical" />
+
+      <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_weight="1"
+         android:orientation="vertical">
+
+         <LinearLayout
+            android:id="@+id/home_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/icon_information_2" />
+
+            <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="行业资讯"
+               android:textColor="@color/tv_black1"
+               android:textSize="@dimen/tv_size_body2" />
+         </LinearLayout>
+
+         <View style="@style/cm_line_horizontal" />
+
+         <LinearLayout
+            android:id="@+id/ll_ershou"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@mipmap/icon_market" />
+
+            <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="二手车市"
+               android:textColor="@color/tv_black1"
+               android:textSize="@dimen/tv_size_body2" />
+         </LinearLayout>
+
+         <View style="@style/cm_line_horizontal" />
+
+         <LinearLayout
+            android:id="@+id/home_btn_invoice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+               android:id="@+id/iv_invoice"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/icon_upload" />
+
+            <TextView
+               android:id="@+id/tv_invoice"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="上传发货单"
+               android:textColor="@color/tv_black1"
+               android:textSize="@dimen/tv_size_body2" />
+         </LinearLayout>
+
+         <View style="@style/cm_line_horizontal" />
+
+      </LinearLayout>
+
+      <View style="@style/cm_line_vertical" />
+
+      <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_weight="1"
+         android:orientation="vertical">
+
+         <LinearLayout
+            android:id="@+id/home_kd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/icon_express" />
+
+            <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="物流快递"
+               android:textColor="@color/tv_black1"
+               android:textSize="@dimen/tv_size_body2" />
+         </LinearLayout>
+
+         <View style="@style/cm_line_horizontal" />
+
+         <LinearLayout
+            android:id="@+id/qiandaochoujiang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+               android:id="@+id/iv_qiandao"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/icon_report" />
+
+            <TextView
+               android:id="@+id/tv_qiandao"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="签到抽奖"
+               android:textColor="@color/tv_black1"
+               android:textSize="@dimen/tv_size_body2" />
+         </LinearLayout>
+
+         <View style="@style/cm_line_horizontal" />
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+         </LinearLayout>
+
+         <View style="@style/cm_line_horizontal" />
+      </LinearLayout>
+
+   </LinearLayout>
+</LinearLayout>

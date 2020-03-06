@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_tab1_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@android:color/white"
+    >
+
+ <ScrollView 
+    android:id="@+id/home_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:layout_below="@+id/top_bar"
+    >  
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+<ImageView
+    android:id="@+id/home_tv_sign"
+    android:layout_width="40dp"
+    android:layout_height="20dp"
+    android:scaleType="fitCenter"
+    android:src="@drawable/home_iv_sign"
+    android:layout_gravity="right"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="12dp"
+    />
+
+<ImageView
+    android:layout_width="200dp"
+    android:layout_height="60dp"
+    android:scaleType="fitCenter"
+    android:src="@drawable/home_logo"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="40dp"
+    />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/cm_side"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+            <EditText
+                android:id="@+id/home_et_search"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:singleLine="true"
+                android:paddingLeft="6dp"
+                android:paddingRight="70dp"
+                android:textSize="@dimen/tv_size_body2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:textColor="@color/cm_font_blue"
+                android:text="优配搜索"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@drawable/home_driver"
+                android:drawablePadding="8dp"
+                android:id="@+id/home_tv_search"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            >
+            <!-- 轿车-->
+        <LinearLayout
+            style="@style/home_ll_category"
+            >
+        <ImageView
+            style="@style/home_iv_icon"
+            android:background="@drawable/home_catalog_jc"
+            />
+        <TextView
+            style="@style/home_tv_category"
+            android:text="轿车"
+            />
+        </LinearLayout>
+
+            <!-- 通用-->
+            <LinearLayout
+                style="@style/home_ll_category"
+                >
+                <ImageView
+                    style="@style/home_iv_icon"
+                    android:background="@drawable/home_catalog_ty"
+                    />
+                <TextView
+                    style="@style/home_tv_category"
+                    android:text="通用"
+                    />
+            </LinearLayout>
+
+            <!-- 装具-->
+            <LinearLayout
+                style="@style/home_ll_category"
+                >
+                <ImageView
+                    style="@style/home_iv_icon"
+                    android:background="@drawable/home_catalog_zj"
+                    />
+                <TextView
+                    style="@style/home_tv_category"
+                    android:text="装具"
+                    />
+            </LinearLayout>
+
+
+            <!-- 拆车件-->
+            <LinearLayout
+                style="@style/home_ll_category"
+                >
+                <ImageView
+                    style="@style/home_iv_icon"
+                    android:background="@drawable/home_catalog_cc"
+                    />
+                <TextView
+                    style="@style/home_tv_category"
+                    android:text="拆车件"
+                    />
+            </LinearLayout>
+
+
+            <!-- 商用件-->
+            <LinearLayout
+                style="@style/home_ll_category"
+                >
+                <ImageView
+                    style="@style/home_iv_icon"
+                    android:background="@drawable/home_catalog_sy"
+                    />
+                <TextView
+                    style="@style/home_tv_category"
+                    android:text="商用车"
+                    />
+            </LinearLayout>
+
+            <!-- 物流-->
+            <LinearLayout
+                style="@style/home_ll_category"
+                >
+                <ImageView
+                    style="@style/home_iv_icon"
+                    android:background="@drawable/home_catalog_wl"
+                    />
+                <TextView
+                    style="@style/home_tv_category"
+                    android:text="物流"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cm_divider"
+            android:layout_marginTop="18dp"
+            />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@color/cm_bg_layout"
+    >
+        <TextView
+            android:id="@+id/home_tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textColor="@color/tv_black1"
+            android:textSize="@dimen/tv_size_body3"
+            android:contentDescription="今日拨打:654次 总计拨打:152次"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/list_xx"
+            android:drawablePadding="8dp"
+            /></LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/cm_bg_layout"
+    android:paddingBottom="15dp"
+    >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cm_side_w"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+          android:padding="15dp"
+            >
+        <TextView
+            android:id="@+id/tab1_tv_label1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tv_black1"
+            android:textSize="@dimen/tv_size_subhead"
+            android:text="优配中国礼品热线"
+            />
+
+            <TextView
+                android:id="@+id/tab1_tv_label2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tv_black2"
+                android:textSize="@dimen/tv_size_body2"
+                android:layout_below="@id/tab1_tv_label1"
+                android:layout_marginTop="10dp"
+                android:text="优配中国礼品热线"
+                />
+
+            <View
+                android:id="@+id/tab1_iv_divier1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cm_divider"
+                android:layout_marginTop="12dp"
+                android:layout_below="@id/tab1_tv_label2"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/tab1_rl_phone1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                >
+
+                <Button
+                    android:id="@+id/tab1_iv_phone1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/home_btn_phone"
+                    />
+
+                <TextView
+                    android:id="@+id/tab1_tv_phone1"
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/tv_black2"
+                    android:textSize="@dimen/tv_size_body3"
+                    android:layout_below="@id/tab1_iv_phone1"
+                    android:gravity="center"
+                    android:text="拨  打"
+                    android:layout_marginTop="2dp"
+
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/tab1_iv_divier2"
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:background="@color/cm_divider"
+                android:layout_toLeftOf="@id/tab1_rl_phone1"
+                android:layout_marginRight="10dp"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/tab1_tv_label3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tab1_iv_divier1"
+                android:textColor="@color/tv_black1"
+                android:textSize="@dimen/tv_size_subhead"
+                android:text="优配中国礼品热线"
+                android:layout_marginTop="12dp"
+                />
+
+            <TextView
+                android:id="@+id/tab1_tv_label4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tv_black2"
+                android:textSize="@dimen/tv_size_body2"
+                android:layout_below="@id/tab1_tv_label3"
+                android:layout_marginTop="10dp"
+                android:text="优配中国礼品热线"/>
+
+
+
+            <RelativeLayout
+                android:id="@+id/tab1_rl_phone2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tab1_iv_divier1"
+                android:layout_marginTop="15dp"
+                >
+
+                <Button
+                    android:id="@+id/tab1_iv_phone2"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/home_btn_phone"
+                    />
+
+                <TextView
+                    android:id="@+id/tab1_tv_phone2"
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/tv_black2"
+                    android:textSize="@dimen/tv_size_body3"
+                    android:layout_below="@id/tab1_iv_phone2"
+                    android:gravity="center"
+                    android:text="拨  打"
+                    android:layout_marginTop="2dp"
+
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/tab1_iv_divier3"
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:background="@color/cm_divider"
+                android:layout_toLeftOf="@id/tab1_rl_phone2"
+                android:layout_below="@id/tab1_iv_divier1"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                />
+        </RelativeLayout>
+
+
+
+    <RelativeLayout
+    android:id="@+id/tab1_rr_integral"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cm_side_w"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:padding="15dp"
+    >
+    <TextView
+        android:id="@+id/tab1_tv_label5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/tv_black1"
+        android:textSize="@dimen/tv_size_subhead"
+        android:text="优配中国积分政策"
+        />
+
+    <TextView
+        android:id="@+id/tab1_tv_label6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/tv_black2"
+        android:textSize="@dimen/tv_size_body2"
+        android:layout_below="@id/tab1_tv_label5"
+        android:layout_marginTop="10dp"
+        android:text="欢迎使用商城积分，让购物更加方便"
+        />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/list_next"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            />
+
+  <!--  <RelativeLayout
+        android:id="@+id/tab1_rl_phone3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        >
+
+        <Button
+            android:id="@+id/tab1_iv_phone3"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/home_btn_phone"
+            />
+
+        <TextView
+            android:id="@+id/tab1_tv_phone3"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tv_black2"
+            android:textSize="@dimen/tv_size_body3"
+            android:layout_below="@id/tab1_iv_phone3"
+            android:gravity="center"
+            android:text="拨  打"
+            android:layout_marginTop="2dp"
+
+            />
+
+    </RelativeLayout>-->
+
+    <View
+        android:id="@+id/tab1_iv_divier5"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:background="@color/cm_divider"
+        android:layout_toLeftOf="@id/tab1_tv_label6"
+        android:layout_marginRight="10dp"
+        />
+
+
+
+</RelativeLayout>
+
+
+</LinearLayout>
+    </LinearLayout></ScrollView>
+</RelativeLayout>

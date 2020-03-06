@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ml="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/common_white"
+    >
+<!-- 标题 -->
+<RelativeLayout
+    android:id="@+id/top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@color/common_blue"
+    >
+    <ImageView
+        android:id="@+id/top_back"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/common_back"
+        android:scaleType="centerInside"
+        android:paddingRight="20dp"
+        />
+    <TextView
+        android:id="@+id/top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="绑定"
+        android:layout_centerInParent="true"
+        android:textColor="@color/common_white"
+        android:textSize="23sp"
+        />
+</RelativeLayout>    
+    <com.zuomei.widget.MLLineLayout 
+		android:id="@+id/add_name"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		ml:text="姓名:"
+		android:layout_below="@id/top_bar"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+>
+     <EditText
+         android:id="@+id/add_et_name"
+         style="@style/add_et"
+         android:layout_width="170dp"
+         android:hint="请输入姓名..."
+         />
+     </com.zuomei.widget.MLLineLayout>
+       <com.zuomei.widget.MLLineLayout 
+		android:id="@+id/add_cft"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		ml:text="财付通:"
+		android:layout_below="@id/add_name"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+>
+     <EditText
+         android:id="@+id/add_et_cft"
+         style="@style/add_et"
+         android:layout_width="170dp"
+         android:hint="请输入财付通账号..."
+         />
+     </com.zuomei.widget.MLLineLayout>
+     
+       
+       <Button
+         android:id="@+id/bind_btn"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:layout_below="@id/add_cft"
+         android:layout_marginTop="35dp"
+         android:layout_marginLeft="20dp"
+    	 android:layout_marginRight="20dp"
+    	 android:background="@drawable/login_btn"
+    	 android:text="确定"
+    	 android:gravity="center"
+    	 android:textColor="@color/common_white"
+    	 android:textSize="18sp"
+         />  
+</RelativeLayout>

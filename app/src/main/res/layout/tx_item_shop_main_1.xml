@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cm_side_w"
+    android:paddingBottom="8dp"
+    >
+<!--tx_item_shop_main_.xml   将商品图片高度调整下 -->
+    <ImageView
+        android:id="@+id/shop_iv_icom"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:src="@drawable/shop_default"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/shop_tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="top|center_vertical"
+        android:text="我的积分我的积分我的积分我的积分我的积分"
+        android:layout_marginTop="10dp"
+        android:maxLines="2"
+        android:layout_below="@id/shop_iv_icom"
+        android:textColor="@color/tv_black1"
+        android:textSize="@dimen/tv_size_body2"
+        android:layout_marginLeft="8dp"
+        />
+
+
+    <TextView
+        android:id="@+id/shop_tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="¥158"
+        android:singleLine="true"
+        android:layout_below="@id/shop_tv_name"
+        android:textColor="@color/shop_tv_price_main"
+        android:textSize="@dimen/tv_size_subhead"
+        android:layout_marginLeft="8dp"
+        />
+
+    <TextView
+        android:id="@+id/shop_tv_price_old"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="¥158"
+        android:singleLine="true"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/shop_tv_name"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/tv_black2"
+        android:textSize="@dimen/tv_size_body2"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@id/shop_tv_price"
+        />
+
+</RelativeLayout>

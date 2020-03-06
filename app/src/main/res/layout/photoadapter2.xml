@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="165dp"
+   android:layout_height="wrap_content"
+   android:paddingTop="5dp">
+
+   <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <ImageView
+         android:id="@+id/iamgeview1"
+         android:layout_width="150dp"
+         android:layout_height="100dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginLeft="10dp"
+         android:scaleType="fitStart"
+         android:src="@mipmap/add_img"/>
+
+      <ImageView
+         android:id="@+id/iamgeview2"
+         android:layout_width="15dp"
+         android:layout_height="15dp"
+         android:layout_alignParentRight="true"
+         android:background="@drawable/escguanbi"/>
+   </RelativeLayout>
+</LinearLayout>

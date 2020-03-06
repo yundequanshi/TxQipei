@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/accident_add_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/common_white">
+ <!-- 标题 -->
+<RelativeLayout
+    android:id="@+id/top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@color/common_blue"
+    >
+    <ImageView
+        android:id="@+id/top_back"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/common_back"
+        android:scaleType="centerInside"
+        android:paddingRight="20dp"
+        />
+    <TextView
+        android:id="@+id/top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商家宣言"
+        android:layout_centerInParent="true"
+        android:textColor="@color/common_white"
+        android:textSize="23sp"
+        />
+</RelativeLayout>
+
+  <EditText
+         android:id="@+id/et_content"
+         android:layout_width="match_parent"
+         android:layout_height="180dp"
+         android:hint="请输入企业宣言"
+         android:layout_margin="15dp"
+         android:gravity="top|left"
+           android:maxLength="100"
+         />
+  
+<Button
+         android:id="@+id/btn_submit"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:layout_marginTop="25dp"
+         android:layout_marginLeft="20dp"
+    	 android:layout_marginRight="20dp"
+    	 android:background="@drawable/login_btn"
+    	 android:text="修改"
+    	 android:gravity="center"
+    	 android:textColor="@color/common_white"
+    	 android:textSize="18sp"
+         />  
+</LinearLayout>

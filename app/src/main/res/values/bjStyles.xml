@@ -1,0 +1,7 @@
+<resources>
+
+   <style name="bj_popp_anim" parent="android:Animation">
+      <item name="android:windowEnterAnimation">@anim/bj_anim_popup_in</item>
+      <item name="android:windowExitAnimation">@anim/bj_anim_popup_out</item>
+   </style>
+</resources>

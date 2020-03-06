@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cm_bg_layout"
+    >
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        style="@style/topbar_layout">
+
+        <TextView
+            android:id="@+id/top_tv_title"
+            style="@style/topbar_title"
+            android:layout_centerInParent="true"
+            android:text="我 的" />
+
+        <ImageButton
+            android:id="@+id/top_btn_right"
+            style="@style/topbar_btn_right"
+            android:background="@null"
+            android:src="@drawable/me_btn_set" />
+    </RelativeLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/me_rl_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cm_side_w"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            >
+
+            <cn.ml.base.widget.roundedimageview.RoundedImageView
+                android:id="@+id/me_iv_icon"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:scaleType="centerCrop"
+                app:riv_border_color="@color/cm_head_side"
+                app:riv_border_width="2dp"
+                app:riv_corner_radius="30dp"
+                app:riv_oval="true" />
+
+
+            <TextView
+                android:id="@+id/me_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张三"
+                android:textColor="@color/tv_black1"
+                android:textSize="18sp"
+                android:layout_alignTop="@id/me_iv_icon"
+                android:layout_toRightOf="@id/me_iv_icon"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/me_tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15285854858"
+                android:textColor="@color/tv_black1"
+                android:textSize="@dimen/tv_size_subhead"
+                android:layout_below="@id/me_tv_name"
+                android:layout_alignLeft="@id/me_tv_name"
+                android:layout_marginTop="7dp"
+                />
+
+            <TextView
+                android:id="@+id/me_tv_jf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="积分：85"
+                android:textColor="@color/tv_black2"
+                android:textSize="@dimen/tv_size_body2"
+                android:layout_below="@id/me_tv_phone"
+                android:layout_alignLeft="@id/me_tv_name"
+                android:layout_marginTop="7dp"
+                />
+
+            <TextView
+                android:id="@+id/me_tv_yue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="积分：85"
+                android:textColor="@color/tv_black2"
+                android:textSize="@dimen/tv_size_body2"
+                android:layout_below="@id/me_tv_phone"
+                android:layout_toRightOf="@id/me_tv_jf"
+                android:layout_alignTop="@id/me_tv_jf"
+                android:layout_marginLeft="40dp"
+                />
+
+            <ImageButton
+                android:id="@+id/me_btn_edit"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:background="@null"
+                android:src="@drawable/me_btn_edit"
+                android:scaleType="fitCenter"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/me_tv_phone"
+                android:layout_marginRight="10dp"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cm_side_w"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:id="@+id/me_tv_balance"
+                style="@style/me_tv"
+                android:text="余额管理"
+                android:drawableLeft="@drawable/yueguanli"
+                />
+            <View
+                style="@style/me_divider"/>
+
+            <TextView
+                android:id="@+id/me_tv_integral"
+                style="@style/me_tv"
+                android:text="积分管理"
+                android:drawableLeft="@drawable/jifenguanli"
+                />
+            <View
+                style="@style/me_divider"/>
+
+<TextView
+    android:id="@+id/me_tv_offer"
+    style="@style/me_tv"
+    android:text="我的报价"
+    android:drawableLeft="@drawable/list_my_bj"
+    />
+            <View
+                style="@style/me_divider"/>
+            <TextView
+                android:id="@+id/me_tv_deal"
+                style="@style/me_tv"
+                android:text="交易记录"
+                android:drawableLeft="@drawable/list_my_jy"
+                />
+            <View
+                style="@style/me_divider"/>
+            <TextView
+                android:id="@+id/me_tv_phone1"
+                style="@style/me_tv"
+                android:text="电话记录"
+                android:drawableLeft="@drawable/list_my_tel"
+                />
+            <View
+                style="@style/me_divider"/>
+            <TextView
+                style="@style/me_tv"
+                android:text="我的收藏"
+                android:drawableLeft="@drawable/list_my_sc"
+                />
+            <View
+                style="@style/me_divider"/>
+            <TextView
+                android:id="@+id/me_tv_accident"
+                style="@style/me_tv"
+                android:text="事故车管理"
+                android:drawableLeft="@drawable/list_my_sgc"
+                />
+            <View
+                style="@style/me_divider"/>
+            <TextView
+                android:id="@+id/me_tv_incident"
+                style="@style/me_tv"
+                android:text="二手件管理"
+                android:drawableLeft="@drawable/list_my_esj"
+                />
+
+            </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

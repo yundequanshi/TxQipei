@@ -1,0 +1,29 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="220dp">
+
+   <android.support.v4.view.ViewPager
+      android:id="@+id/house_info_bianner_vger"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"/>
+
+   <LinearLayout
+      android:id="@+id/house_info_banner_group"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="20dp"
+      android:layout_marginRight="10dp"
+      android:layout_gravity="bottom"
+      android:gravity="right"
+      android:minHeight="30dp"
+      android:orientation="horizontal"/>
+
+
+   <cn.ml.base.widget.slider1.AbSlidingPlayView
+      android:id="@+id/house_info_banner_img"
+      android:layout_width="fill_parent"
+      android:layout_height="200dp"
+      android:scaleType="fitXY"
+      android:src="@drawable/banner"
+      android:visibility="visible" />
+</FrameLayout>

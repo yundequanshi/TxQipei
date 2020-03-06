@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/header_group"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/ease_mm_listitem">
+
+        <ImageView
+            android:id="@+id/notify_iv_icon"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ease_default_avatar" />
+
+        <TextView
+            android:id="@+id/notify_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/notify_iv_icon"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/notify_iv_icon"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="群聊"
+            android:textColor="@color/list_itease_primary_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/notify_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/notify_iv_icon"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@id/notify_iv_icon"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/list_itease_secondary_color"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"
+            android:background="@drawable/cm_btn_line"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="同意"
+            android:textColor="#ef6031"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cm_bg_layout"
+    >
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        style="@style/topbar_layout">
+
+        <TextView
+            android:id="@+id/top_tv_title"
+            style="@style/topbar_title"
+            android:layout_centerInParent="true"
+            android:text="发 现" />
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/found_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:layout_marginTop="10dp"
+        android:stretchMode="columnWidth"
+        android:listSelector="@android:color/transparent"
+        />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="@color/cm_divider"
+    />
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        >
+
+        <TextView
+        style="@style/fount_tv"
+            android:drawableTop="@drawable/home_fhd"
+        android:text="活动与团购"
+        />
+        <TextView
+            style="@style/fount_tv"
+            android:text="活动与团购"
+            />
+        <TextView
+            style="@style/fount_tv"
+            android:text="活动与团购"
+            />
+
+    </LinearLayout>-->
+</LinearLayout>

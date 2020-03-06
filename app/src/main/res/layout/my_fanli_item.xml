@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="100dp" 
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    >
+<ImageView
+    android:id="@+id/money_iv_icon"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="10dp"
+    />
+<TextView
+    android:id="@+id/my_money_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/common_black"
+    android:textSize="18sp"
+    android:text="济南东方汽配"
+    android:layout_toRightOf="@id/money_iv_icon"
+    android:layout_marginTop="13dp"
+    android:layout_alignParentTop="true"
+    />
+<!-- <TextView
+    android:id="@+id/my_money_order"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/common_darker_gray"
+    android:textSize="18sp"
+    android:text="订单号：5436546546"
+    android:layout_toRightOf="@id/money_iv_icon"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="13dp"
+    /> -->
+<TextView
+    android:id="@+id/my_money_time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/common_darker_gray"
+    android:textSize="18sp"
+    android:text="6月8日"
+      android:layout_toRightOf="@id/money_iv_icon"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="13dp"
+    />
+<TextView
+    android:id="@+id/my_money_price"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@android:color/holo_red_dark"
+    android:textSize="18sp"
+    android:text=""
+    android:layout_alignTop="@id/my_money_time"
+    android:layout_alignParentRight="true"
+    /> 
+<!-- <TextView
+    android:id="@+id/my_money_price"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#fdb300"
+    android:textSize="20sp"
+    android:text="-9元"
+    android:visibility="invisible"
+    android:layout_alignTop="@id/my_money_name"
+    android:layout_alignParentRight="true"
+    />
+<TextView
+    android:id="@+id/my_money_price"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@android:color/holo_red_dark"
+    android:textSize="18sp"
+    android:text="等待发货"
+    android:visibility="invisible"
+    android:layout_alignTop="@id/my_money_time"
+    android:layout_alignParentRight="true"
+    /> -->
+</RelativeLayout>
+</RelativeLayout>

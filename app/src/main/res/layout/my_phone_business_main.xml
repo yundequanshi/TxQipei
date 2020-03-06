@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_register_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="@color/login_bg"
+    >
+ <!-- 标题 -->
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_layout">
+
+        <ImageButton
+            android:id="@+id/top_back"
+            style="@style/topbar_btn_left"
+            android:src="@drawable/qp_cm_btn_back" />
+
+        <TextView
+            android:id="@+id/top_tv_title"
+            style="@style/topbar_title"
+            android:layout_centerInParent="true"
+            android:text="最近联系" />
+    </RelativeLayout>
+
+<TextView
+    android:id="@+id/phone_tv_count"
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:textColor="@color/common_orange"
+    android:text="剩余分钟:"
+    android:textSize="16sp"
+    android:gravity="center|center_vertical"
+    />
+<!-- <com.zuomei.widget.pulltorefresh.PullToRefreshListView
+        android:id="@+id/phone_lv"
+			android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" 
+		android:background="@color/common_white"
+		android:layout_marginTop="5dp"
+        /> -->
+   <com.ab.view.pullview.AbPullToRefreshView
+    android:id="@+id/phone_lv"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_white"
+    android:layout_below="@id/top_bar"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/mListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+		style="@style/common_list"  
+        />
+
+</com.ab.view.pullview.AbPullToRefreshView>    
+    
+</LinearLayout>

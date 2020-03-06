@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="#f0f0f0"
+    >
+    
+  <RelativeLayout
+       android:id="@+id/register_topbar"
+		style="@style/topbar_layout"        
+        >
+        <ImageButton
+            style="@style/topbar_btn_left"
+            android:id="@+id/post_btn_left"
+            android:src="@drawable/qp_cm_btn_back" />
+
+        <TextView
+            style="@style/topbar_title"
+            android:id="@+id/top_tv_title"
+            android:layout_centerInParent="true"
+            android:text="编辑"
+            />
+        
+          <ImageButton
+            android:id="@+id/post_btn_right"
+            style="@style/topbar_btn_right"
+              android:background="@null"
+            android:src="@drawable/baocun" />
+        
+        </RelativeLayout>
+    
+    	 <EditText 
+            android:id="@+id/edit_content"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:gravity="left|top"
+            android:textColor="@color/tv_black1"
+            android:textSize="@dimen/tv_size_subhead"
+           />
+    	 
+    	
+   </LinearLayout>

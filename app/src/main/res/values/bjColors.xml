@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <color name="cm_bg_layout_bj">#F2F2F2</color>
+   <color name="bj_head_back_nomall">#161A24</color>
+
+   <!-- 修理厂报价状态-->
+   <color name="bj_state1">#FF9627</color>
+   <color name="bj_state_bg1">#FFEAD4</color>
+   <color name="bj_state2">#71D9CD</color>
+   <color name="bj_state_bg2">#E3F7F5</color>
+   <color name="bj_state3">#71D9CD</color>
+   <color name="bj_state_bg3">#E3F7F5</color>
+   <color name="bj_state4">#37BBFD</color>
+   <color name="bj_state_bg4">#D7F1FF</color>
+
+   <!-- 商家报价状态-->
+   <color name="bj_biz_state1">#EC0B65</color>
+   <color name="bj_biz_state2">#FF9627</color>
+   <color name="bj_biz_state3">#71D9CD</color>
+   <color name="bj_biz_state4">#37BBFD</color>
+   <color name="bj_biz_state5">#FF4400</color>
+
+   <color name="bj_btn_1">#FF4400</color>
+   <color name="bj_btn_2">#F49674</color>
+   <color name="bj_pop_add_bg">#A2A2A2</color>
+</resources>

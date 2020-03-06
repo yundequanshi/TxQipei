@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cm_bg_layout"
+    >
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        style="@style/topbar_layout">
+        <ImageButton
+            android:id="@+id/top_btn_left"
+            style="@style/topbar_btn_left"
+            android:src="@drawable/qp_cm_btn_back" />
+        <TextView
+            android:id="@+id/top_tv_title"
+            style="@style/topbar_title"
+            android:layout_centerInParent="true"
+            android:text="商品详情" />
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@id/topbar"
+        android:descendantFocusability="blocksDescendants"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <ImageView
+        android:id="@+id/shop_iv"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/jishenbanner"
+        android:scaleType="centerCrop"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            >
+        <TextView
+            android:id="@+id/shop_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:contentDescription="快睡觉多亏了撒娇付款了的数据库了丰盛的就快了费就快了"
+            android:maxLines="2"
+            android:textColor="@color/tv_black1"
+            android:textSize="@dimen/tv_size_subhead"
+            android:padding="10dp"
+            />
+
+            <TextView
+                android:id="@+id/shop_tv_jf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="兑换需要 45 积分"
+                android:maxLines="2"
+                android:textColor="@color/tv_black1"
+                android:textSize="@dimen/tv_size_body2"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/cm_side_w"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="兑换热线："
+                android:textColor="@color/tv_black2"
+                android:textSize="@dimen/tv_size_body2"
+                android:paddingLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/shop_tv_phone"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:contentDescription="1525858548"
+                android:textColor="@color/cm_font_blue1"
+                android:textSize="@dimen/tv_size_body2"
+                android:paddingLeft="10dp"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:background="@color/cm_bg_layout"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/detail_iv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/yijianboda"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/cm_side_w"
+            android:layout_marginTop="10dp"
+            android:minHeight="200dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top|center_horizontal"
+                android:paddingTop="20dp"
+                android:text="商品介绍："
+                android:textColor="@color/tv_black2"
+                android:textSize="@dimen/tv_size_body2"
+                android:paddingLeft="10dp"
+                />
+
+
+            <com.txsh.utils.MLScrollWebView
+                android:id="@+id/shop_web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                />
+         <!--   <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+             &lt;!&ndash;   <TextView
+                    android:id="@+id/shop_tv_title"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="我的积分"
+                    android:textColor="@color/tv_black1"
+                    android:textSize="@dimen/tv_size_body2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="18dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/shop_tv_content"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="我的积分"
+                    android:textColor="@color/tv_black1"
+                    android:textSize="@dimen/tv_size_body2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="18dp"
+
+                    />
+&ndash;&gt;
+
+            </LinearLayout>-->
+
+
+            </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/detail_btn_buy"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/cm_btn_blue_1"
+        android:layout_alignParentBottom="true"
+        android:text="积分兑换"
+        android:textSize="@dimen/tv_size_subhead"
+        android:textColor="@android:color/white"
+        />
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:star="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/part_iv_rz"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/list_rz" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/tv_black1"
+        android:textSize="@dimen/tv_size_subhead"
+        android:text="Small Text"
+        android:layout_marginLeft="6dp"
+        android:id="@+id/part_tv_name"
+        android:layout_toRightOf="@id/part_iv_rz"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/tv_black2"
+        android:textSize="@dimen/tv_size_body2"
+        android:text="拨打次数：98次"
+        android:id="@+id/part_tv_count"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/part_iv_icon"
+        android:layout_below="@+id/part_iv_rz"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/test3" />
+
+
+
+    <cn.ml.base.widget.sample.MLStar
+
+        android:id="@+id/part_iv_star"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/part_iv_icon"
+        android:layout_toRightOf="@+id/part_iv_icon"
+        star:count="5"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        />
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cm_font_blue"
+        android:textSize="@dimen/tv_size_body2"
+        android:text="Small Text"
+        android:layout_marginTop="6dp"
+        android:id="@+id/part_tv_major"
+        android:singleLine="true"
+        android:layout_alignLeft="@id/part_iv_star"
+        android:layout_below="@+id/part_iv_star"
+        android:layout_toRightOf="@+id/part_iv_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/tv_black2"
+        android:textSize="@dimen/tv_size_body2"
+        android:text="Small Text"
+        android:layout_alignLeft="@id/part_iv_star"
+        android:id="@+id/part_tv_address"
+        android:layout_marginTop="6dp"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/part_iv_icon"
+        android:layout_below="@+id/part_tv_major" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_below="@+id/part_iv_star"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/list_back" />
+</RelativeLayout>

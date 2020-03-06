@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/money_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cm_bg_layout"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/product_rela_titile"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        >
+
+        <ImageButton
+            android:id="@+id/top_btn_left"
+            style="@style/topbar_btn_left"
+            android:src="@drawable/qp_cm_btn_back" />
+
+        <TextView
+            android:id="@+id/points_tv_title"
+            style="@style/topbar_title"
+            android:layout_centerInParent="true"
+            android:text="余额管理" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/cm_side_w"
+        >
+
+        <cn.ml.base.widget.roundedimageview.RoundedImageView
+            android:id="@+id/me_iv_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test3"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            app:riv_border_color="@color/cm_head_side"
+            app:riv_border_width="2dp"
+            app:riv_corner_radius="30dp"
+            app:riv_oval="true" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/money_tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="姓名"
+                android:gravity="center"
+                android:textColor="@color/tv_black1"
+                android:textSize="@dimen/tv_size_subhead"
+                android:drawableRight="@drawable/points_iv_drivier"
+                />
+            <TextView
+                android:id="@+id/money_tv_balance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="姓名"
+                android:gravity="center"
+                android:textColor="@color/tv_black1"
+                android:textSize="@dimen/tv_size_body2"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/accident_btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/tv_size_body2"
+        android:text="余额提现"
+        android:background="@drawable/cm_btn_blue"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <com.ab.view.pullview.AbPullToRefreshView
+        android:id="@+id/message_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/cm_bg_layout"
+        android:layout_below="@id/money_rl_head"
+        android:orientation="vertical" >
+    <ListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/point_lv"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollingCache="false"
+        android:background="@drawable/cm_side_w"
+        android:divider="@color/cm_divider"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+    </com.ab.view.pullview.AbPullToRefreshView>
+</LinearLayout>
+</RelativeLayout>

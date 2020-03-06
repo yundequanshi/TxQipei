@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/login_register_root"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:background="@color/common_white">
+
+
+   <cn.ml.base.widget.sample.MLNoScrollListView
+      android:id="@+id/home_lv_business"
+      style="@style/common_list"
+      android:layout_height="match_parent"
+      android:background="@color/common_white" />
+</RelativeLayout>

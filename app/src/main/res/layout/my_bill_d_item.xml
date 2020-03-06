@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/money_iv_icon"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/my_money_icon" />
+
+        <TextView
+            android:id="@+id/my_money_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@id/money_iv_icon"
+            android:ellipsize="end"
+            android:maxEms="9"
+            android:singleLine="true"
+            android:text="济南东方汽配"
+            android:textColor="@color/common_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/my_money_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/money_iv_icon"
+            android:layout_centerVertical="true"
+            android:text="-9元"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/my_money_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="13dp"
+            android:layout_toRightOf="@id/money_iv_icon"
+            android:text="6月8日"
+            android:textColor="@color/common_darker_gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/my_money_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/my_money_time"
+            android:padding="3dp"
+            android:text="等待发货"
+            android:textColor="@color/white"
+            android:background="@color/cm_font_blue1"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

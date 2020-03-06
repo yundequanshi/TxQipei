@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/head_back_nomall" >
+
+        <ImageView
+            android:id="@+id/top_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/common_back" 
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="交流"
+            android:textColor="@color/common_white"
+            android:textSize="23sp" />
+
+        <ImageView
+            android:id="@+id/tab2_iv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/nav_fabu" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tab2_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/top_bar"
+        android:background="@android:color/white" >
+
+        <RadioGroup
+            android:id="@+id/interact_rg"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/interact_rb_tab1"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tab2_tv_nav"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="互动"
+                android:textColor="@drawable/interact_tv_color" />
+            <!-- android:textColor="@drawable/interact_tv_color" -->
+
+            <RadioButton
+                android:id="@+id/interact_rb_tab2"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tab2_tv_nav"
+                android:button="@null"
+                android:gravity="center"
+                android:text="我发表的"
+                android:textColor="@drawable/interact_tv_color" />
+
+            <RadioButton
+                android:id="@+id/interact_rb_tab3"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/tab2_tv_nav"
+                android:button="@null"
+                android:gravity="center"
+                android:text="我的回复"
+                android:textColor="@drawable/interact_tv_color" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/interact_rg"
+            android:background="@color/cm_divider"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/tab2_iv_search"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:padding="13dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/interact_iv_search"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/interact_fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab2_rl_top" />
+
+</RelativeLayout>

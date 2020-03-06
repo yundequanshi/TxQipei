@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <!-- 修理厂报价列表-->
+   <string name="quoted_price_head_name">报价列表</string>
+   <string name="quoted_price_head_right">报价</string>
+
+   <!-- 修理厂发布报价 -->
+   <string name="com_publish_head_name">发布报价</string>
+   <string name="com_publish_head_right">发布</string>
+   <string name="com_publish_car">车型</string>
+   <string name="com_publish_hint_car">请选择车型</string>
+   <string name="com_publish_zicar">子车型</string>
+   <string name="com_publish_hint_zicar">请选择子车型（选填）</string>
+   <string name="com_publish_niankuan">年款</string>
+   <string name="com_publish_hint_niankuan">请选择汽车款型（选填）</string>
+   <string name="com_publish_pailiang">排量</string>
+   <string name="com_publish_chejia">车架号</string>
+   <string name="com_publish_hint_pailiang">请输入2.0T或是2.0L（选填）</string>
+   <string name="com_publish_hint_chejia">请输入车架号（选填）</string>
+   <string name="com_publish_wuliu">物流</string>
+   <string name="com_publish_hint_wuliu">请输入物流名称（选填）</string>
+   <string name="com_publish_peijian">配件列表</string>
+   <string name="com_publish_btn">添加配件</string>
+   <string name="com_publish_btn2">拍照</string>
+
+   <!-- 修理厂发布报价 popupwindows -->
+   <string name="com_publish_pop_head_name">添加配件</string>
+   <string name="com_publish_pop_peijian_name">请输入配件名称</string>
+   <string name="com_publish_pop_num">请输入需要数量</string>
+   <string name="com_publish_pop_type">分类</string>
+   <string name="com_publish_pop_btn">确定</string>
+
+   <!-- 报价详情-->
+   <string name="com_quoted_detail_head_name">报价详情</string>
+   <string name="com_quoted_detail_head_right">报价</string>
+   <string name="com_quoted_detail_biz_quoted">商家报价</string>
+
+   <!-- 修理厂里面的商家报价-->
+   <string name="com_biz_quoted_head_name">商家报价</string>
+   <string name="com_biz_quoted_head_right">报价</string>
+   <string name="com_biz_quoted_peijian">配件列表</string>
+   <string name="com_biz_quoted_wuliu">物流信息</string>
+   <string name="com_biz_quoted_wuliu_name">物流名称：</string>
+   <string name="com_biz_quoted_wuliu_num">物流单号：</string>
+
+   <!-- 商家报价列表-->
+   <string name="biz_head_name">报价列表</string>
+   <string name="biz_head_rb_state1">待报价</string>
+   <string name="biz_head_rb_state2">已报价</string>
+
+   <!-- 商家报价详情-->
+   <string name="biz_quoted_head_name">报价详情</string>
+   <string name="biz_quoted_pop_name">发货单</string>
+   <string name="biz_quoted_pop_hint_wuliu">请输入物流名称</string>
+   <string name="biz_quoted_pop_hint_wuliu_num">请输入物流单号</string>
+   <string name="biz_quoted_pop_btn">确定</string>
+   <string name="biz_quoted_pop_head_name2">报价</string>
+   <string name="biz_quoted_pop_hint_quote">请输入报价</string>
+
+   <!-- 修理厂报价状态-->
+   <string name="com_state_1">已确认</string>
+   <string name="com_state_2">待报价</string>
+   <string name="com_state_3">已报价</string>
+   <string name="com_state_4">待发货</string>
+   <string name="com_state_5">已发货</string>
+   <string name="com_state_6">已采购</string>
+
+   <!--商家报价状态-->
+   <string name="biz_state_1">待报价</string>
+   <string name="biz_state_2">已报价</string>
+   <string name="biz_state_3">未选中</string>
+   <string name="biz_state_4">被采购</string>
+   <string name="biz_state_5">已确认</string>
+   <string name="biz_state_6">待发货</string>
+   <string name="biz_state_7">已发货</string>
+
+</resources>

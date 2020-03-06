@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/accident_add_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cm_bg_layout"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        style="@style/topbar_layout" >
+
+        <ImageButton
+            android:id="@+id/top_btn_left"
+            style="@style/topbar_btn_left"
+            android:src="@drawable/common_back" />
+
+        <TextView
+            android:id="@+id/top_tv_title"
+            style="@style/topbar_title"
+            android:layout_centerInParent="true"
+            android:text="发布供求信息"
+            android:textColor="@color/white" />
+        
+        <Button
+                android:id="@+id/accident_btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nav_fabiao"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f2f2f2"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/add_rl_supply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/common_white"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/add_tv_label"
+                    style="@style/common_text_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:text="供求身份 　"
+                    android:textColor="@color/tv_black1" />
+
+                <TextView
+                    android:id="@+id/add_tv_driver1"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/add_tv_label"
+                    android:background="#989898" />
+
+                <ImageView
+                    android:id="@+id/phone_iv_arrows"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/my_arrows_right" />
+
+                <TextView
+                    android:id="@+id/accident_tv_city"
+                    style="@style/accident_orange_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left|center_vertical"
+                    android:layout_toRightOf="@id/add_tv_driver1"
+                    android:layout_marginLeft="10dp"
+                    android:hint="亲，点击选择供求信息"
+                    />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/common_divider" />
+
+            <RelativeLayout
+                android:id="@+id/accident_rl_nick"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/common_white"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/add_tv_label2"
+                    style="@style/common_text_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="联系方式    "
+                    android:textColor="@color/tv_black1" />
+
+                <TextView
+                    android:id="@+id/add_tv_driver2"
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/add_tv_label2"
+                    android:background="#989898" />
+
+
+
+                <EditText
+                    android:id="@+id/add_tv_phone"
+                    style="@style/accident_orange_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/add_tv_driver2"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/common_white"
+                android:layout_marginTop="10dp"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/add_tv_label3"
+                    style="@style/common_text_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="产品名称    "
+                    android:textColor="@color/tv_black1" />
+
+                <TextView
+                    android:id="@+id/add_tv_driver3"
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/add_tv_label3"
+                    android:background="#989898" />
+
+
+                <EditText
+                    android:id="@+id/add_tv_name"
+                    style="@style/accident_orange_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:hint="亲，请输入产品的名称"
+                    android:gravity="left"
+                    android:layout_toRightOf="@id/add_tv_driver3"
+                    />
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/common_divider" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_white"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/add_tv_label4"
+                    style="@style/common_text_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="产品说明    "
+                    android:textColor="@color/tv_black1" />
+
+                <TextView
+                    android:id="@+id/add_tv_driver4"
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignTop="@id/add_tv_label4"
+                    android:layout_toRightOf="@id/add_tv_label4"
+                    android:background="#989898" />
+
+
+                <EditText
+                    android:id="@+id/add_tv_content"
+                    style="@style/accident_orange_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:hint="亲，请输入产品的名称"
+                    android:gravity="top|left"
+                    android:paddingTop="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/add_tv_driver4"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <GridView
+                    android:id="@+id/accident_gv_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/common_transparent"
+                    android:padding="15dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="0dp"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/last_hint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:padding="15dp"
+                android:text="点击添加6张图片，请从正面、侧面、细节展示车辆。"
+                android:textColor="@color/tv_black1"
+                android:textSize="@dimen/tv_size_body2" />
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

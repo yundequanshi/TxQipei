@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:ml="http://schemas.android.com/apk/res-auto"
+   android:id="@+id/root"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:background="@color/cm_bg_layout"
+   android:orientation="vertical">
+   <!-- 标题 -->
+   <RelativeLayout
+      android:id="@+id/topbar"
+      style="@style/topbar_layout">
+
+      <ImageButton
+         android:id="@+id/top_back"
+         style="@style/topbar_btn_left"
+         android:src="@drawable/qp_cm_btn_back" />
+
+      <TextView
+         style="@style/topbar_title"
+         android:layout_centerInParent="true"
+         android:text="发货单" />
+   </RelativeLayout>
+
+   <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="10dp"
+      android:layout_below="@id/topbar"
+      android:background="@android:color/white">
+
+      <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+
+         <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="请选择发货的商家"
+            android:gravity="center_vertical"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="@color/tv_black1"
+            android:textSize="@dimen/tv_size_body2" />
+
+
+         <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="请选择发货时间"
+            android:gravity="center_vertical"
+            android:maxLength="20"
+            android:textColor="@color/tv_black1"
+            android:textSize="@dimen/tv_size_body2" />
+
+         <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="请选择发货时间"
+            android:gravity="center_vertical"
+            android:maxLength="20"
+            android:textColor="@color/tv_black1"
+            android:textSize="@dimen/tv_size_body2" />
+
+
+         <ImageView
+            android:id="@+id/add_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter" />
+
+      </LinearLayout>
+
+   </ScrollView>
+</RelativeLayout>

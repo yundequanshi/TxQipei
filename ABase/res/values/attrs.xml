@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+   <!-- SliderLayout  start -->
+   <declare-styleable name="SliderLayout">
+
+      <!-- indicator visibility -->
+      <attr format="enum" name="indicator_visibility">
+         <enum name="visible" value="0" />
+         <enum name="invisible" value="1" />
+      </attr>
+      <attr format="boolean" name="auto_cycle" />
+      <!-- page animation -->
+      <attr format="enum" name="pager_animation">
+         <enum name="Default" value="0">Default</enum>
+         <enum name="Accordion" value="1">Accordion</enum>
+         <enum name="Background2Foreground" value="2">Background2Foreground</enum>
+         <enum name="CubeIn" value="3">CubeIn</enum>
+         <enum name="DepthPage" value="4">DepthPage</enum>
+         <enum name="Fade" value="5">Fade</enum>
+         <enum name="FlipHorizontal" value="6">FlipHorizontal</enum>
+         <enum name="FlipPage" value="7">FlipPage</enum>
+         <enum name="Foreground2Background" value="8">Foreground2Background</enum>
+         <enum name="RotateDown" value="9">RotateDown</enum>
+         <enum name="RotateUp" value="10">RotateUp</enum>
+         <enum name="Stack" value="11">Stack</enum>
+         <enum name="Tablet" value="12">Tablet</enum>
+         <enum name="ZoomIn" value="13">ZoomIn</enum>
+         <enum name="ZoomOutSlide" value="14">ZoomOutSlide</enum>
+         <enum name="ZoomOut" value="15">ZoomOut</enum>
+      </attr>
+
+      <!-- page animation time span -->
+      <attr format="integer" name="pager_animation_span" />
+   </declare-styleable>
+   <declare-styleable name="PagerIndicator">
+
+      <!-- indicator visibility -->
+      <attr format="enum" name="visibility">
+         <enum name="visible" value="0" />
+         <enum name="invisible" value="1" />
+      </attr>
+      <attr format="enum" name="page_shape">
+         <enum name="oval" value="0" />
+         <enum name="rect" value="1" />
+      </attr>
+      <attr format="color" name="selected_color" />
+      <attr format="color" name="unselected_color" />
+
+      <!-- indicator style -->
+      <attr format="reference" name="selected_drawable" />
+      <attr format="reference" name="unselected_drawable" />
+      <attr format="dimension" name="selected_width" />
+      <attr format="dimension" name="selected_height" />
+      <attr format="dimension" name="unselected_width" />
+      <attr format="dimension" name="unselected_height" />
+      <attr format="dimension" name="padding_left" />
+      <attr format="dimension" name="padding_right" />
+      <attr format="dimension" name="padding_top" />
+      <attr format="dimension" name="padding_bottom" />
+      <attr format="dimension" name="selected_padding_left" />
+      <attr format="dimension" name="selected_padding_right" />
+      <attr format="dimension" name="selected_padding_top" />
+      <attr format="dimension" name="selected_padding_bottom" />
+      <attr format="dimension" name="unselected_padding_left" />
+      <attr format="dimension" name="unselected_padding_right" />
+      <attr format="dimension" name="unselected_padding_top" />
+      <attr format="dimension" name="unselected_padding_bottom" />
+   </declare-styleable>
+   <declare-styleable name="Themes">
+      <attr format="reference" name="SliderStyle" />
+      <attr format="reference" name="PagerIndicatorStyle" />
+   </declare-styleable>
+   <!-- SliderLayout  end -->
+
+
+   <!-- RoundedImageView    -->
+   <declare-styleable name="RoundedImageView">
+      <attr format="dimension" name="riv_corner_radius" />
+      <attr format="dimension" name="riv_border_width" />
+      <attr format="color" name="riv_border_color" />
+      <attr format="boolean" name="riv_mutate_background" />
+      <attr format="boolean" name="riv_oval" />
+      <attr name="android:scaleType" />
+   </declare-styleable>
+   <!-- RoundedImageView   end -->
+
+
+   <!-- MLStar -->
+   <declare-styleable name="star">
+      <attr format="integer" name="count" />
+   </declare-styleable>
+
+   <!-- MLStar   end-->
+
+   <!-- PullToZoomScrollView -->
+   <declare-styleable name="PullToZoomScrollView">
+      <attr format="reference" name="scrollHeadView" />
+      <attr format="reference" name="scrollContentView" />
+      <attr format="reference" name="scrollZoomView" />
+   </declare-styleable>
+   <!-- PullToZoomScrollView   end -->
+
+   <!-- ShSwitchView -->
+   <declare-styleable name="MLShSwitchView">
+      <attr format="reference|color" name="tintColor" />
+      <attr format="reference|dimension" name="outerStrokeWidth" />
+      <attr format="reference|dimension" name="shadowSpace" />
+   </declare-styleable>
+   <!-- ShSwitchView  end -->
+
+   <!--MLLineLayout  -->
+   <declare-styleable name="Linelayout">
+      <attr format="string" name="text" />
+      <attr format="reference" name="mll_icon" />
+      <attr format="boolean" name="arrows" />
+   </declare-styleable>
+   <!-- MLLineLayout   end -->
+
+
+   <!-- 省市联动-->
+   <declare-styleable name="NumberPicker">
+      <attr format="color" name="normalTextColor" />
+      <attr format="dimension" name="normalTextSize" />
+      <attr format="color" name="selecredTextColor" />
+      <attr format="dimension" name="selecredTextSize" />
+      <attr format="dimension" name="unitHight" />
+      <attr format="integer" name="itemNumber" />
+      <attr format="color" name="lineColor" />
+      <attr format="dimension" name="maskHight" />
+      <attr format="boolean" name="noEmpty" />
+      <attr format="boolean" name="isEnable" />
+   </declare-styleable>
+
+   <!--FloatActionButton-->
+   <declare-styleable name="FloatActionButton">
+      <attr format="color" name="colorPressed" />
+      <attr format="color" name="colorNormal" />
+      <attr format="enum" name="size">
+         <enum name="normal" value="0" />
+         <enum name="mini" value="1" />
+      </attr>
+   </declare-styleable>
+   <declare-styleable name="FloatingActionButton">
+      <attr format="color" name="fab_colorPressed" />
+      <attr format="color" name="fab_colorNormal" />
+      <attr format="boolean" name="fab_shadow" />
+      <attr format="enum" name="fab_type">
+         <enum name="normal" value="0" />
+         <enum name="mini" value="1" />
+      </attr>
+   </declare-styleable>
+
+</resources>

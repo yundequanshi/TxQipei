@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:background="@color/cm_bg_layout">
+
+   <RelativeLayout
+      android:id="@+id/head"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/head_back_nomall">
+
+      <ImageButton
+         android:id="@+id/top_btn_left"
+         android:layout_width="48dp"
+         android:layout_height="48dp"
+         android:layout_centerVertical="true"
+         android:background="@null"
+         android:visibility="gone"
+         android:src="@drawable/nav_shop_back" />
+
+      <TextView
+         android:id="@+id/head_tx"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:padding="13dp"
+         android:maxEms="8"
+         android:singleLine="true"
+         android:text="商城"
+         android:textColor="@color/white"
+         android:textSize="23sp" />
+
+      <ImageView
+         android:id="@+id/head_right_bt"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:background="@null"
+         android:gravity="center"
+         android:src="@drawable/gouwuche" />
+   </RelativeLayout>
+
+   <com.ab.view.pullview.AbPullToRefreshView
+      android:id="@+id/refresh_layout"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_below="@+id/head"
+      android:orientation="vertical">
+
+      <ScrollView
+         android:id="@+id/home_scrollview"
+         style="@style/march_all"
+         android:scrollbars="none">
+
+         <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true">
+
+            <RelativeLayout
+               android:id="@+id/rl_banner"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingBottom="10dp"
+               android:background="@color/cm_white">
+
+               <include
+                  android:id="@+id/house_info_banner_fv"
+                  layout="@layout/index_info_banner" />
+
+               <RelativeLayout
+                  android:id="@+id/shop_rl_search"
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:background="@drawable/banner_top_gradient">
+
+                  <TextView
+                     android:id="@+id/home_et_search"
+                     style="@style/home_et_search"
+                     android:layout_margin="8dp"
+                     android:layout_centerInParent="true"
+                     android:background="@drawable/home_et_search"
+                     android:gravity="center"
+                     android:hint="亲，请搜索商品名称或商家名称" />
+
+                  <ImageView
+                     android:id="@+id/btn_search"
+                     android:layout_width="60dp"
+                     android:layout_height="60dp"
+                     android:layout_marginLeft="10dp"
+                     android:layout_alignParentRight="true"
+                     android:paddingRight="10dp"
+                     android:scaleType="centerInside"
+                     android:src="@drawable/home_top_search" />
+               </RelativeLayout>
+
+               <cn.ml.base.widget.sample.MLScrollGridView
+                  android:id="@+id/gv_type"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:layout_below="@+id/house_info_banner_fv"
+                  android:background="@color/cm_white"
+                  android:horizontalSpacing="5dp"
+                  android:listSelector="@android:color/transparent"
+                  android:numColumns="4"
+                  android:verticalSpacing="5dp" />
+            </RelativeLayout>
+
+            <cn.ml.base.widget.sample.MLNoScrollListView
+               android:id="@+id/shop_grid"
+               style="@style/cm_list_view"
+               android:layout_marginTop="10dp"
+               android:layout_below="@+id/rl_banner"
+               android:dividerHeight="0dp" />
+
+         </RelativeLayout>
+      </ScrollView>
+   </com.ab.view.pullview.AbPullToRefreshView>
+
+   <ImageView
+      android:id="@+id/shop_top"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="30dp"
+      android:layout_marginRight="15dp"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:src="@drawable/fanhuidingbu_pre" />
+</RelativeLayout>
