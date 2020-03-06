@@ -1,10 +1,5 @@
 apply plugin: 'com.android.library'
 
-dependencies {
-    api fileTree(include: '*.jar', dir: 'libs')
-    api files('libs/ShareSDK-Email-2.5.8.jar')
-}
-
 android {
     compileSdkVersion 22
     buildToolsVersion '22.0.1'
@@ -15,4 +10,8 @@ android {
         versionCode 1
         versionName "1.0.1"
     }
+}
+
+dependencies {
+    api fileTree(include: '*.jar', dir: 'libs')
 }

@@ -36,23 +36,22 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    //    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:22.2.1'
-    compile 'com.android.support:support-v4:22.2.1'
-    compile files('libs/async.jar')
-    compile files('libs/alipaySDK-20150610.jar')
-    compile files('libs/andbase.jar')
-    compile files('libs/httpmime-4.1.1.jar')
-    compile files('libs/yunzhixun_video_SDK_ver_1.1.10.jar')
-    compile project(':HxModule')
-    compile project(':ShareSdk')
-    compile(name: 'FitPopupwindow', ext: 'aar')
-    compile(name: 'alterview', ext: 'aar')
-    compile 'com.github.orangegangsters:swipy:1.2.3@aar'
-    compile files('libs/jpush-android-2.1.7.jar')
-    compile project(':galleryfinal')
-    compile 'com.tencent.bugly:crashreport:latest.release' //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
-    compile 'com.tencent.bugly:nativecrashreport:latest.release' //其中latest.release指代最新Bugly NDK版本号，也可以指定明
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api 'com.android.support:appcompat-v7:22.2.1'
+    api 'com.android.support:support-v4:22.2.1'
+    api files('libs/async.jar')
+    api files('libs/alipaySDK-20150610.jar')
+    api files('libs/andbase.jar')
+    api files('libs/httpmime-4.1.1.jar')
+    api files('libs/yunzhixun_video_SDK_ver_1.1.10.jar')
+    api project(':HxModule')
+    api project(':ShareSdk')
+    api(name: 'FitPopupwindow', ext: 'aar')
+    api(name: 'alterview', ext: 'aar')
+    api 'com.github.orangegangsters:swipy:1.2.3@aar'
+    api files('libs/jpush-android-2.1.7.jar')
+    api project(':galleryfinal')
+    api 'com.tencent.bugly:crashreport:latest.release' //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
+    api 'com.tencent.bugly:nativecrashreport:latest.release' //其中latest.release指代最新Bugly NDK版本号，也可以指定明
 }
 //签名密码 rfr454545
